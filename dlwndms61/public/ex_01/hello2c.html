@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script defer src="/__/firebase/7.13.1/firebase-app.js"></script>
+  <script defer src="/__/firebase/7.13.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/init.js"></script>
+  <style>
+    body { padding: 20px; }
+    input, button { padding: 5px; margin: 5px; }
+  </style>
+    </head>
+    <body>
+        <div id="app">
+            <h1>{{ title }}</h1>
+            <p>{{ body }}</p>
+            <hr />
+            <input type="text" v-model="title_edit" /> <br /> <!-- 입력되는 값을 title_edit속성에 저장-->
+            <input type="text" v-model="body_edit" /> <br />
+            <button type="button" v-on:click="save">저장</button>
+        </div>
+        <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: 'hello world',
+                body: 'good morning',
+                title_edit:'', // 여기에 저장
+                body_edit:'',
+            }, // Vue 앱 객체에, title_edit 속성과 body_edit 속성을 추가한다.
+        methods:{
+            save: function() {
+                let helloRef = firebase.database().ref("hello");
+                helloRef.set({ title: this.title_edit, body: this.body_edit });
+                // 저장 버튼을 누르면, title_edit 속성과 body_edit속성의 값이 DB의 hello 항목에 저장된다.
+            }
+        }
+        })
+
+        window.onload = function() {
+            let helloRef = firebase.database().ref("hello");
+            helloRef.on('value', (snapshot) => {
+                let hello = snapshot.val();
+                app.title = hello.title;
+                app.body = hello.body;
+            }); // DB의 hello값이 변경되는 순간 이 함수가 즉시 호출.
+        };
+        </script>
+    </body>
+</html>
