@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <style>
+            div#app {
+                padding: 20px;
+                margin: 30px auto;
+                max-width: 600px;
+                border: 1px solid #ccc;
+                box-shadow: 3px 3px 3px #aaa;
+            }
+            label { font-size: 15pt; }
+
+            input[type=radio] {
+                width: 15px;
+                height: 15px;
+            }
+            div#hello {
+                margin: 30px;
+                padding: 20px;
+                background-color: #f8a0a0;
+                border: 1px red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <label>
+                <input type="radio" value="true" v-model="gender" />
+                남자
+            </label>
+            <label>
+                <input type="radio" value="false" v-model="gender" />
+                여자
+            </label>
+            <div id ="hello" v-show="gender == null">
+                성별 입력은 필수입니다.</div>    
+        </div>
+        <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                gender: null
+            }
+        })
+        </script>
+    </body>
+</html>
