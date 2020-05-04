@@ -7,7 +7,7 @@
         div#app {
             padding: 30px;
             margin: 30px auto;
-            max-width: 300px;
+            max-width: 500px;
             border: 1px solid #ccc;
             box-shadow: 3px 3px 3px #aaa;
         }
@@ -15,7 +15,7 @@
         span {
             display: inline-block;
             margin: 5px;
-            padding: 8px 15px;
+            padding: 8px 100px;
             border: 1px solid black;
             cursor: pointer;
         }
@@ -25,7 +25,7 @@
         }
 
         button {
-            padding: 0.5em 2em;
+            padding: 0.5em 1em;
         }
     </style>
 </head>
@@ -35,28 +35,22 @@
         <span>
             {{ i }}
         </span>
-        <div>
             <button type="button" v-on:click="increase">++</button>
             <button type="button" v-on:click="decrease">--</button>
-        </div>
     </div>
 
     <script type="text/javascript">
         var app = new Vue({
             el: '#app',
             data: {
-                a: [0]
+                i : 0
             },
             methods: {
                 increase() {
-                    for (let i = 0; i < this.a.length; ++i)
-                        this.a[i] += 1;
-                    this.$forceUpdate();
+                    this.i++;
                 },
                 decrease() {
-                    for (let i = 0; i < this.a.length; --i)
-                        this.a[i] -= 1;
-                    this.$forceUpdate();
+                    this.i--;
                 }
             }
         })
