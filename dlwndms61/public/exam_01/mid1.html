@@ -15,13 +15,9 @@
         span {
             display: inline-block;
             margin: 5px;
-            padding: 8px 100px;
+            padding: 5px 100px;
             border: 1px solid black;
             cursor: pointer;
-        }
-
-        div#app>div {
-            margin-top: 20px;
         }
 
         button {
@@ -35,15 +31,15 @@
         <span>
             {{ i }}
         </span>
-            <button type="button" v-on:click="increase">++</button>
-            <button type="button" v-on:click="decrease">--</button>
+        <button type="button" v-on:click="increase">++</button>
+        <button type="button" v-on:click="decrease">--</button>
     </div>
 
     <script type="text/javascript">
         var app = new Vue({
             el: '#app',
             data: {
-                i : 0
+                i: 0
             },
             methods: {
                 increase() {
