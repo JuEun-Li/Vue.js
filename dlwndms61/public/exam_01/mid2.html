@@ -3,26 +3,58 @@
 <head>
     <meta charset="utf-8" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<style>
-    div.box {
-        background : rgb(250, 250, 102);
-        border-style: solid;
-        width: 100px;
-        height: 100px;
-        border-width: 1.5px;
-    }
-    body { padding: 20px; }
-    input, button { padding: 5px; margin: 5px; }
-</style>
+    <style>
+        div#app {
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 3px 3px 3px #aaa;
+            text-align: center;
+        }
+
+        div.box {
+            background: rgb(250, 250, 102);
+            border-style: solid;
+            margin: 20px auto;
+            width: 100px;
+            height: 100px;
+            border-width: 1.5px;
+        }
+
+        button {
+            padding: 5px;
+            margin: 1px;
+            width: 100px;
+        }
+    </style>
 </head>
+
 <body>
     <div id="app">
-        <button type="button" v-on:click="see" v-show="!seeing">보이기</button>
-        <button type="button" v-on:click="notsee" v-show="seeing">감추기</button>
-    </div>
-    <div class="box">
-        <span></span>
-    </div>
+        <div>
+            <button type="button" v-on:click="see" v-bind:disabled="show">보이기</button>
+            <button type="button" v-on:click="notsee" v-bind:disabled="!show">감추기</button>
+
+            <div class="box" v-show="show"> </div>
+        </div>
+
+        <script type="text/javascript">
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    show: true
+                },
+                methods: {
+                    see() {
+                        this.show = true;
+                    },
+                    notsee() {
+                        this.show = false;
+                    }
+                }
+            })
+        </script>
 </body>
 
 </html>
