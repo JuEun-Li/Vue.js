@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        div#app {
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            box-shadow: 3px 3px 3px #aaa;
+        }
+
+        div#app div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type=text] {
+            padding: 4px;
+        }
+
+        div.total {
+            font-size: 16pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>주문</h1>
+        <div>
+            <label>수량</label>
+            <input type="text" v-model="quantity" />
+        </div>
+        <div>
+            <label>가격</label>
+            <input type="text" v-model="price" />
+        </div>
+        <hr />
+        <div class="total">
+            {{ total }} <!--메소드 호출이 아니므로 ()를 붙이지 않는 것에 유의.-->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                quantity: 1,
+                price: 0
+            },
+            computed: {
+                total() {
+                    let s = String(this.quantity * this.price); // 계산식 값을 문자열로 변환 후
+                    for (let i = 3; s.length > i; i += 4)
+                        s = s.slice(0, -i) + "," + s.slice(-i); // -i인 이유는 i의 바로 앞까지 출력해야하기 때문.
+                    return s;
+                } // slice 메소드를 통해 4, 7, 11...자리에 콤마 넣어서 출력하기.
+            }
+        })
+    </script>
+</body>
+
+</html>

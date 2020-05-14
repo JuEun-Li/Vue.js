@@ -1,0 +1,52 @@
+<html>
+<!--파이어베이스 디비에 저장하기-->
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="/__/firebase/7.13.1/firebase-app.js"></script>
+    <script defer src="/__/firebase/7.13.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="todo1.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>할 일</h1>
+        <ul>
+            <li v-for="todo in todoList">
+                {{ todo }}
+            </li>
+        </ul>
+        <input type="text" v-model="todo" />
+        <button type="button" v-on:click="addTodo">할일 추가</button>
+    </div>
+
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                todoList: [],
+                todo: ""
+            },
+            methods: {
+                addTodo: function () {
+                    let s = this.todo.trim(); // 빈 문자열은 추가되지 않게하는 기능
+                    if (s) { // 내용이 있을 경우 true로 간주, 아래 내용이 실행된다.
+                        this.todoList.push(s);
+                        this.todo1Ref.set(this.todoList);
+                    }
+                    this.todo = ""; // 입력 후 창을 빈 문자열로 초기화
+                }
+            }
+        })
+
+        window.onload = function () {
+            app.todo1Ref = firebase.database().ref("todo1");
+            app.todo1Ref.on('value', (snapshot) => {
+                app.todoList = snapshot.val();
+            });
+        }
+    </script>
+</body>
+
+</html>
