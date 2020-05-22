@@ -74,15 +74,13 @@
                 axios.post('https://dlwndms61.firebaseio.com/todo1.json', this.todo)
                     .then(response => this.reload());
                 this.showDialog = false;
-            },
+            }, // 저장
             remove: function () {
                 if (confirm("삭제하시겠습니까?") == false) return;
                 axios.delete('https://dlwndms61.firebaseio.com/todo1/' + this.selectedKey + '.json')
                     .then(response => this.reload());
                 this.showDialog = false;
-            }
-
-
+            } // 삭제
         })
 
         window.onload = function () {
