@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld message="첫번째 Vue.js App 입니다" />
   </div>
 </template>
 
@@ -16,13 +15,8 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+div#app { padding: 30px; margin: 30px auto; max-width: 400px;
+      border: 1px solid #ccc; box-shadow: 3px 3px 3px #aaa; }
 </style>
+
