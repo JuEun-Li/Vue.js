@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "Counter1", // 컴포넌트 이름(파일명이 달라도 괜찮다.)
+  name: "Counter1", // 컴포넌트 이름(파일명이 달라도 괜찮다)
   props: ["title", "description"], // 파라미터와 비슷하다.
   data: function() {
     return { counter: 0 };
