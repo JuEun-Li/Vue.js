@@ -29,7 +29,7 @@ div {
 input {
   padding: 5px;
   margin-right: 5px; 
-} /* <template> 부분에서는, 태그와 태그 사이의 공백이나 줄바꿈 문자가 전부 제거된다. 따라서 마진값 지정 필수 */
+} /* <template> 부분에서는, 태그와 태그 사이의 공백이나 줄바꿈 문자가 전부 제거된다. 따라서 마진값 지정 필수. */
 button {
   padding: 0.4em 1em;
   margin-right: 5px;
