@@ -5,8 +5,8 @@
     <a href="finals3.html">페이지 3</a> <br />
     <a href="finals4.html">페이지 4</a> <br />
     <a href="finals5.html">페이지 5</a> <br />
-    <a href="finals6.html">페이지 6</a> <br />
-    <a href="finals7.html">페이지 7</a> <br />
+    <a href="finals6.html">페이지 5</a> <br />
+    <a href="finals7.html">페이지 5</a> <br />
   </div>
 </template>
 
