@@ -13,9 +13,12 @@
 
     <script>
         var div = document.querySelector('#app');
-        console.log(div); 
-        div.innerHTML = 'hello world'; 
+        var str = 'hello world';
+        div.innerHTML = str; // html은 화면의 정보를, 자바스크립트는 돔의 조작을 담당
+
+        str = 'hello world!!!';
+        div.innerHTML = str; // str의 내용이 바뀌면 다시 호출했어야했다.(기존 방식)
     </script>
-</body> 
+</body>
 
 </html>
