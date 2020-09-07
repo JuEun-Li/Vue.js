@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 
@@ -14,12 +15,14 @@
         var div = document.querySelector('#app');
         var viewModel = {};
 
+        // Object.defineProperty(대상 객체, 객체의 속성, {
+        //   // 정의할 내용
+        // })
 
-        (function () { // 즉시 실행 함수
+        (function () {
             function init() {
-                // Object.defineProperty() // 객체의 동작을 재정의.(대상 객체, 객체의 속성, {정의할 내용})
                 Object.defineProperty(viewModel, 'str', {
-                    // 속성의 접근했을 때의 동작을 정의
+                    // 속성에 접근했을 때의 동작을 정의
                     get: function () {
                         console.log('접근');
                     },
@@ -32,12 +35,11 @@
             }
 
             function render(value) {
-                div.innerHTML = Value; // 값을 바꿀 때 마다 화면에 반영
+                div.innerHTML = value;
             }
 
             init();
-        })();
-
+        })();    
     </script>
 </body>
 
