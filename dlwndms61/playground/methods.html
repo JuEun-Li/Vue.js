@@ -8,6 +8,7 @@
 <body>
     <div id="app">
         <button v-on:click="logText">Click me</button>
+        <input type="text" v-on:keyup.enter="logText"> <!--keyboard 입력관련-->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
