@@ -1,19 +1,24 @@
-<template><!--최상위 하나만 있어야-->
+<template>
+  <!--최상위 하나만 있어야-->
   <div>
-    {{ str }}
+    <app-header></app-header>
   </div>
 </template>
 
 <script>
+import AppHeader from '/components/AppHeader.vue';
+
 export default {
-  data: function() {
+  data: function () {
     return {
-      str: 'hi'
-    }
+      str: "hi",
+    };
+  },
+  components: {
+    'app-header': AppHeader
   }
-}
+};
 </script>
 
 <style>
-
 </style>
