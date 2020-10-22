@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import AppHeader from '/components/AppHeader.vue';
+import AppHeader from './components/AppHeader.vue';
 
 export default {
   data: function () {
@@ -24,7 +24,7 @@ export default {
       this.str = 'hi';
     }
   }
-};
+}
 </script>
 
 <style>
