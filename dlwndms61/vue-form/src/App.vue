@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     submitForm: function() {
-      //event.preventDefault(); // login후 데이터가 새로고침 되지 않음. 날아가지 않음,
+      //event.preventDefault(); // login후 데이터가 새로고침 되지 않음. 날아가지 않음.
       console.log(this.username, this.password);
       var url = 'https://jsonplaceholder.typicode.com/users';
       var data = {
