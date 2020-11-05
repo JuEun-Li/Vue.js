@@ -22,7 +22,7 @@ export default {
       for(var i = 0; i < localStorage.length; i++) {
         this.todoItems.push(localStorage.key(i));
       } // localstorage 데이터 꺼내기
-    }
+    } 
   }
 }
 </script>
