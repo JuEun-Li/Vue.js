@@ -3,6 +3,7 @@
       <ul>
         <li v-for="todoItem in todoItems" v-bind:key="todoItem">
           {{ todoItem }}
+
         </li>
         <!-- <li>2</li> -->
         <!-- <li>3</li> -->
