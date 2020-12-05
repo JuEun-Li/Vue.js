@@ -1,6 +1,8 @@
 <template>
   <div>
-      Main
+      <input type="text" v-model="todo" />
+      <span style="color: mediumturquoise"> <i class="fas fa-plus-square fa-2x"></i>
+      </span>
   </div>
 </template>
 
@@ -10,6 +12,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  div { text-align: center; }
+  div > input { height: 15px; margin: 3px;}
 </style>
