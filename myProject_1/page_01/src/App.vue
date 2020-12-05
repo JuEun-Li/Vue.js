@@ -21,5 +21,11 @@ export default {
 </script>
 
 <style>
+  div#app {
+    padding: 30px; margin: 30px auto; max-width: 400px;
+      border: 1px solid #ccc; box-shadow: 3px 3px 3px #aaa; }
 
+  div#app div { margin-bottom: 20px;}
+  label { display: block;}
+  input[type=text] { padding: 4px;}
 </style>
