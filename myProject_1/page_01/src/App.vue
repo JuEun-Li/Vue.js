@@ -23,7 +23,7 @@ export default {
 <style>
   div#app {
     padding: 30px; margin: 30px auto; max-width: 400px;
-      border: 1px solid #ccc; box-shadow: 3px 3px 3px #aaa;
+      border: 1px solid aliceblue; box-shadow: 4px 4px 4px #ccc;
       background-color: aliceblue; }
 
   div#app div { margin-bottom: 20px;}
