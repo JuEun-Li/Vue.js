@@ -29,5 +29,5 @@ export default {
 <style scoped>
   div { text-align: center; }
   div > input { height: 30px; width: 200px; margin: 3px; 
-    border-color: aliceblue; vertical-align: bottom; }
+    border-color: aliceblue; vertical-align: top; }
 </style>
