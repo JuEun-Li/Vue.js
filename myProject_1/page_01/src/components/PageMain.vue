@@ -1,6 +1,6 @@
 <template>
   <div>
-      <input type="text" v-model="todo" v-on:keyup.enter="addTodo"/>
+      <input type="text" v-model="todoItems" v-on:keyup.enter="addTodo"/>
       <span style="color: mediumturquoise" v-on:click="addTodo">
          <i class="fas fa-plus-square fa-3x"></i>
       </span>
@@ -11,16 +11,16 @@
 export default {
   data: function() {
     return {
-      todo: ""
+      todoItems: ""
     }
   },
   methods: {
     addTodo: function() {
-      localStorage.setItem(this.todo, this.todo);
+      localStorage.setItem(this.todoItems, this.todoItems);
       this.clearInput();
     },
     clearInput: function() {
-      this.todo = '';
+      this.todoItems = '';
     }
   }
 }
@@ -28,6 +28,7 @@ export default {
 
 <style scoped>
   div { text-align: center; }
-  div > input { height: 30px; width: 200px; margin: 3px; 
-    border-color: aliceblue; vertical-align: top; }
+  div > input { height: 30px; width: 200px; margin: 5px 5px 10px; 
+    border-color: aliceblue; vertical-align: bottom; border-radius: 5px; }
+  span { vertical-align: top; }
 </style>
