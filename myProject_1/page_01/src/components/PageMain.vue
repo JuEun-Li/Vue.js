@@ -30,5 +30,5 @@ export default {
   div { text-align: center; }
   div > input { height: 30px; width: 200px; margin: 5px 5px 10px; 
     border-color: aliceblue; vertical-align: bottom; border-radius: 5px; }
-  span { vertical-align: top; }
+  span { vertical-align: top;}
 </style>
