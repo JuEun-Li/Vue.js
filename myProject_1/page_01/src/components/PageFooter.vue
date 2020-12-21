@@ -3,6 +3,9 @@
       <ul>
         <li v-for="todoItem in todoItems" v-bind:key="todoItem" class="box">
           {{ todoItem }}
+          <span class="removeBtn" v-on:click="removeTodo">
+            <i class="fas fa-trash-alt"></i>
+          </span>
         </li>
       </ul>
   </div>
@@ -13,6 +16,11 @@ export default {
   data: function() {
     return {
       todoItems: []
+    }
+  },
+  methods: {
+    removeTodo: function() {
+
     }
   },
   created: function() {
@@ -40,7 +48,13 @@ ul {
   padding: 0 0.9rem;
   min-height: 50px;
   height: 50px;
-  margin: 10px 0px; 
+  margin: 15px 0px; 
   line-height: 50px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.03);
+}
+
+.removeBtn {
+  color: gray;
+  margin-left: auto;
 }
 </style>
