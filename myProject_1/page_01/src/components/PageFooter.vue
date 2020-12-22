@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     removeTodo: function() {
-
+      localStorage.removeItem(todoItem);
     }
   },
   created: function() {
