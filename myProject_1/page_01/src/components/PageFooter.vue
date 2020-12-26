@@ -1,9 +1,10 @@
 <template>
   <div>
       <ul>
-        <li v-for="todoItem in todoItems" v-bind:key="todoItem" class="box">
-          {{ todoItem }}
-          <span class="removeBtn" v-on:click="removeTodo">
+        <li v-for="(todoItem, index) in todoItems" v-bind:key="todoItem" class="box">
+          <i class="fas fa-check" v-on:click="toggleComplete"></i>
+          {{ todoItem.item }}
+          <span class="removeBtn" v-on:click="removeTodo(todoItem, index)">
             <i class="fas fa-trash-alt"></i>
           </span>
         </li>
@@ -19,14 +20,17 @@ export default {
     }
   },
   methods: {
-    removeTodo: function() {
+    removeTodo: function(todoItem, index) {
       localStorage.removeItem(todoItem);
+      this.todoItems.splice(index, 1);
     }
   },
   created: function() {
     if(localStorage.length > 0) {
       for (let i = 0; i < localStorage.length; i++){
-        this.todoItems.push(localStorage.key(i)); 
+        this.todoItems.push(JSON.parse(localStorage.getItem(localStorage.key(i))));
+        // 문자를 객체로 변환했다.
+        // this.todoItems.push(localStorage.key(i)); 
       }
     }
   }
@@ -56,5 +60,8 @@ ul {
 .removeBtn {
   color: gray;
   margin-left: auto;
+}
+.checkBtn {
+  line-height: 45px;
 }
 </style>

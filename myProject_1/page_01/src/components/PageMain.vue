@@ -1,6 +1,6 @@
 <template>
   <div>
-      <input type="text" v-model="todoItems" v-on:keyup.enter="addTodo"/>
+      <input type="text" v-model="newtodoItem" v-on:keyup.enter="addTodo"/>
       <span style="color: mediumturquoise" v-on:click="addTodo">
          <i class="fas fa-plus-square fa-3x"></i>
       </span>
@@ -11,16 +11,16 @@
 export default {
   data: function() {
     return {
-      todoItems: ""
+      newtodoItem: ""
     }
   },
   methods: {
     addTodo: function() {
-      localStorage.setItem(this.todoItems, this.todoItems);
+      localStorage.setItem(this.newtodoItem, JSON.stringify(obj));
       this.clearInput();
     },
     clearInput: function() {
-      this.todoItems = '';
+      this.newtodoItem = '';
     }
   }
 }
