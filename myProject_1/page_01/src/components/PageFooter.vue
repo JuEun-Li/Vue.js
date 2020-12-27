@@ -27,8 +27,8 @@ export default {
       localStorage.removeItem(todoItem);
       this.todoItems.splice(index, 1);
     },
-    toggleComplete: function(todoItem, index) {
-      todoItems.completed = !todoItem.completed; 
+    toggleComplete: function(todoItem) {
+      todoItem.completed = !todoItem.completed; 
       // 로컬 스트리지의 데이터 갱신
       localStorage.removeItem(todoItem.item);
       localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
@@ -73,6 +73,7 @@ ul {
 .checkBtn {
   line-height: 45px;
   color: darkblue;
+  margin-right: 5px;
 }
 .checkBtnCompleted{
   color: lightgray;
