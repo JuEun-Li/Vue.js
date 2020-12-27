@@ -1,9 +1,11 @@
 <template>
   <div>
       <ul>
-        <li v-for="(todoItem, index) in todoItems" v-bind:key="todoItem" class="box">
-          <i class="fas fa-check" v-on:click="toggleComplete"></i>
-          {{ todoItem.item }}
+        <li v-for="(todoItem, index) in todoItems" v-bind:key="todoItem.item" class="box">
+          <i class="checkBtn fas fa-check" v-bind:class="{checkBtnCompleted: todoItem.completed}" 
+          v-on:click="toggleComplete(todoItem, index)"></i>
+
+          <span v-bind:class="{textCompleted: todoItem.completed}">{{ todoItem.item }}</span>
           <span class="removeBtn" v-on:click="removeTodo(todoItem, index)">
             <i class="fas fa-trash-alt"></i>
           </span>
@@ -21,8 +23,15 @@ export default {
   },
   methods: {
     removeTodo: function(todoItem, index) {
+      console.log(todoItem, index);
       localStorage.removeItem(todoItem);
       this.todoItems.splice(index, 1);
+    },
+    toggleComplete: function(todoItem, index) {
+      todoItems.completed = !todoItem.completed; 
+      // 로컬 스트리지의 데이터 갱신
+      localStorage.removeItem(todoItem.item);
+      localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
     }
   },
   created: function() {
@@ -63,5 +72,13 @@ ul {
 }
 .checkBtn {
   line-height: 45px;
+  color: darkblue;
+}
+.checkBtnCompleted{
+  color: lightgray;
+}
+.textCompleted{
+  text-decoration: line-through;
+  color: gray;
 }
 </style>
