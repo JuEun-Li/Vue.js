@@ -72,7 +72,7 @@ ul {
 }
 .checkBtn {
   line-height: 45px;
-  color: darkblue;
+  color: darkblue; 
   margin-right: 5px;
 }
 .checkBtnCompleted{
