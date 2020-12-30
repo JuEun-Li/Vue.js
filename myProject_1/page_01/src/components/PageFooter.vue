@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <section>
       <ul>
-        <li v-for="(todoItem, index) in todoItems" v-bind:key="todoItem.item" class="box">
+        <li v-for="(todoItem, index) in propsdata" v-bind:key="todoItem.item" class="box">
           <i class="checkBtn fas fa-check" v-bind:class="{checkBtnCompleted: todoItem.completed}" 
           v-on:click="toggleComplete(todoItem, index)"></i>
 
@@ -11,36 +11,22 @@
           </span>
         </li>
       </ul>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  data: function() {
-    return {
-      todoItems: []
-    }
-  },
+  props: ['prosdata'],
   methods: {
     removeTodo: function(todoItem, index) {
-      console.log(todoItem, index);
-      localStorage.removeItem(todoItem);
       this.todoItems.splice(index, 1);
+      localStorage.removeItem(todoItem);
     },
     toggleComplete: function(todoItem) {
       todoItem.completed = !todoItem.completed; 
       // 로컬 스트리지의 데이터 갱신
       localStorage.removeItem(todoItem.item);
       localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
-    }
-  },
-  created: function() {
-    if(localStorage.length > 0) {
-      for (let i = 0; i < localStorage.length; i++){
-        this.todoItems.push(JSON.parse(localStorage.getItem(localStorage.key(i))));
-        // 문자를 객체로 변환했다.
-        // this.todoItems.push(localStorage.key(i)); 
-      }
     }
   }
 }
