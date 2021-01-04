@@ -24,5 +24,7 @@ export default {
 </script>
 
 <style>
-
+  div#app div{
+    text-align: center;
+  }
 </style>
