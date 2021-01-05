@@ -1,6 +1,20 @@
 <template>
   <div>
-      <h2>개요</h2><hr>
+      <h2>개요</h2><hr><br><br>
+      <p>
+        <a href="https://esahubble.org/images/heic0715a/">
+        <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0715a.jpg" alt="사진 없음"></a><br>
+        <font size="2em" color="gray" class="font1">NASA, ESA and the Hubble Heritage </font>
+         <font size="2em" color="gray" class="font1"> (STScI/AURA)-ESA/Hubble Collaboration</font>
+      </p>
+      
+      <span class="arrow_box">
+      <p><i class="fas fa-rocket fa-2x"></i><br>
+      지구 바깥에는 '우주'라는 공간이 존재하며, <br>그 곳에는 다양한 가족들이 있습니다.<br>
+      별, 행성, 위성, 소행성, 성운, 성단 등등..<br>
+      '우주'란 무엇일까요?<br>
+      우주는 <mark>'물질과 시공간을 일정한 힘으로 담고있는 공간'</mark>을 의미합니다.<br><br>
+      </p></span>
   </div>
 </template>
 
@@ -10,10 +24,65 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
  hr {
    width: 600px;
    color: lightgray;
    border: solid 1px;
  }
+ h2 {
+   text-align: center;
+ }
+p {  
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+}
+img {
+  display: inline-block;
+  margin-left: 100px;
+  width: 250px;
+  object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
+}
+.font1 {
+  margin-left: 100px;
+}
+i {
+  float: right;
+  color: rosybrown;
+}
+
+.arrow_box {
+  display: inline-block;
+	position: relative;
+	background: white;
+	border: 4px solid   #e09af1;
+  margin-left: 50px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 5px lightgray;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(213, 213, 213, 0);
+	border-right-color: white;
+	border-width: 25px;
+	margin-top: -25px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 199, 245, 0);
+	border-right-color: #e09af1;
+	border-width: 30px;
+	margin-top: -30px;
+}
 </style>
