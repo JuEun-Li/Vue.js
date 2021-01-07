@@ -20,13 +20,13 @@ export default {
 
 <style scoped>
 .mainbar{
-  background: rgb(151, 97, 151);
+  /* background: rgb(151, 97, 151); */
+  background: black;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  /* padding: 15px; */
   margin: 0;
   list-style-type: none;
+  /* position: fixed; */
 }
 
 a {
@@ -38,7 +38,7 @@ a {
   display: block;
   text-align: center;
   padding-bottom: 15px;
-  padding-top: 15px; 
+  padding-top: 20px; 
   /* a 태그 넓이 늘리기*/
 }
 .list-home{

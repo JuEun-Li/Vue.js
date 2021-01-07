@@ -1,8 +1,11 @@
 <template>
   <div>
       <h2>개요</h2><br>
+      
       <!-- <font size="2em" color="gray" class="home"> home </font> -->
       <hr><br><br>
+      <p class="pic_1"><i class="fas fa-star-and-crescent fa-2x"></i></p>
+      우주는 '물질과 시공간을 일정한 힘으로 담고있는 공간'을 의미합니다.<br>
       <p class="pic_1">
         <a href="https://esahubble.org/images/heic0715a/">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0715a.jpg" alt="사진 없음"></a><br>
@@ -10,7 +13,7 @@
          <font size="2em" color="gray" class="font1"> (STScI/AURA)-ESA/Hubble Collaboration</font>
       </p>
       
-      <span class="arrow_box">
+      <span class="box">
       <p class="pic_1"><i class="fas fa-rocket fa-2x"></i><br>
       지구 바깥에는 '우주'라는 공간이 존재하며, <br>그 곳에는 다양한 가족들이 있습니다.<br>
       별, 행성, 위성, 소행성, 성운, 성단 등등..<br>
@@ -18,13 +21,23 @@
       우주는 <mark>'물질과 시공간을 일정한 힘으로 담고있는 공간'</mark>을 의미합니다.<br>
       이 우주의 신비 속으로 들어가봅시다!<br><br>
       </p></span>
+      <br><br><br>
 
         <p class="pic_2">
         <a href="https://esahubble.org/images/solar_system_b/">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/solar_system_b.jpg" alt="사진 없음"></a><br>
-        <font size="2em" color="gray" class="font1">The International Astronomical  </font>
+        <font size="2em" color="gray" class="font1">The International Astronomical  </font><br>
         <font size="2em" color="gray" class="font1">Union/Martin Kornmesser </font>
       </p>
+      <span class="box">
+      <p class="pic_1"><i class="fas fa-rocket fa-2x"></i><br>
+      지구 바깥에는 '우주'라는 공간이 존재하며, <br>그 곳에는 다양한 가족들이 있습니다.<br>
+      별, 행성, 위성, 소행성, 성운, 성단 등등..<br>
+      '우주'란 무엇일까요?<br>
+      우주는 <mark>'물질과 시공간을 일정한 힘으로 담고있는 공간'</mark>을 의미합니다.<br>
+      이 우주의 신비 속으로 들어가봅시다!<br><br>
+      </p></span>
+      <br><br>
   </div>
 </template>
 
@@ -35,6 +48,12 @@ export default {
 </script>
 
 <style scoped>
+div {
+  vertical-align: middle;
+  /* width: 90%; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
  hr {
    width: 600px;
    color: lightgray;
@@ -62,7 +81,7 @@ export default {
 img {
   /* display: inline; */
   margin-left: 100px;
-  width: 250px;
+  width: 300px;
   object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
 }
 /* -------------- img 관련 태그들 */
@@ -72,15 +91,16 @@ img {
 i {
   float: right;
   color: rosybrown;
-  margin-right: 10px;
+  margin-right: 10%;
+  /* vertical-align: left; */
 }
-
+/*
 .arrow_box {
   display: inline-block;
 	position: relative;
 	background: white;
 	border: 4px solid aliceblue;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 30px;
   box-shadow: 5px 5px 5px lightgray;
 }
@@ -106,6 +126,12 @@ i {
 	border-right-color: aliceblue;
 	border-width: 30px;
 	margin-top: -30px;
-}
+}*/
 /* 말풍선 css*/
+
+.box {
+  width: 400px;
+  border: solid;
+  border-color: darkblue;
+}
 </style>
