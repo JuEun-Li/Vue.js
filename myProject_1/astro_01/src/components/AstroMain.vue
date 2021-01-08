@@ -1,20 +1,20 @@
 <template>
   <div>
-      <h2>개요</h2><br>
-      <font size="3em" color="navy" class="font2">home > 개요</font><br><br>
+    <h2>개요</h2><br>
+    <font size="3em" color="navy" class="font2">home > 개요</font><br><br>
       <hr><br>
       
-      <div class="first">
+    <div class="first">
         <i class="star fas fa-star-and-crescent fa-2x"></i>
       우주는 '물질과 시공간을 일정한 힘으로 담고있는 공간'을 의미합니다.</div><br><br><br><br>
 
-      <p class="pic_1">
+    <p class="pic_1">
         <a href="https://esahubble.org/images/heic0715a/">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0715a.jpg" alt="사진 없음"></a><br>
         <font size="2em" color="gray" class="font1">NASA, ESA and the Hubble Heritage </font>
          <font size="2em" color="gray" class="font1"> (STScI/AURA)-ESA/Hubble Collaboration</font>
-      </p>
-      <div class="box_1">
+    </p>
+    <div class="box_1">
         <p class="pic_1"><i class="icon_left fas fa-quote-left fa-2x"></i><br><br>
           지구 바깥에는 '우주'라는 공간이 존재하며, <br>그 곳에는 다양한 가족들이 있습니다.<br>
           별, 행성, 위성, 소행성, 성운, 성단 등등..<br>
@@ -66,9 +66,8 @@ export default {
 <style scoped>
 div {
   vertical-align: middle;
-  /* width: 90%; */
-  margin-left: 5%;
-  margin-right: 5%;
+  /* margin-left: 5%; */
+  /* margin-right: 5%; */
 }
  hr {
    width: 600px;
@@ -83,7 +82,7 @@ div {
  }
  .first {
    display: inline;
-   margin-left: 26%;
+   margin-left: 28%;
    color: gray;
  }
 .pic_1 {  
@@ -123,6 +122,7 @@ img {
   margin-right: 5%;
 }
 .box_1, .box_2 {
+  margin-left: 10%;
   width: 450px;
   border: solid;
   border-color: rosybrown;
