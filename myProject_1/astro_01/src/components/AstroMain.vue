@@ -4,40 +4,42 @@
       
       <!-- <font size="2em" color="gray" class="home"> home </font> -->
       <hr><br><br>
-      <p class="pic_1"><i class="fas fa-star-and-crescent fa-2x"></i></p>
-      우주는 '물질과 시공간을 일정한 힘으로 담고있는 공간'을 의미합니다.<br>
+      
+      <span class="first">
+        <i class="star fas fa-star-and-crescent fa-2x"></i>
+      우주는 '물질과 시공간을 일정한 힘으로 담고있는 공간'을 의미합니다.</span><br><br><br>
+
       <p class="pic_1">
         <a href="https://esahubble.org/images/heic0715a/">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0715a.jpg" alt="사진 없음"></a><br>
         <font size="2em" color="gray" class="font1">NASA, ESA and the Hubble Heritage </font>
          <font size="2em" color="gray" class="font1"> (STScI/AURA)-ESA/Hubble Collaboration</font>
       </p>
-      
-      <span class="box">
-      <p class="pic_1"><i class="fas fa-rocket fa-2x"></i><br>
+      <div class="box_1">
+      <p class="pic_1"><i class="icon_left fas fa-quote-left fa-2x"></i><br>
       지구 바깥에는 '우주'라는 공간이 존재하며, <br>그 곳에는 다양한 가족들이 있습니다.<br>
       별, 행성, 위성, 소행성, 성운, 성단 등등..<br>
       '우주'란 무엇일까요?<br>
       우주는 <mark>'물질과 시공간을 일정한 힘으로 담고있는 공간'</mark>을 의미합니다.<br>
-      이 우주의 신비 속으로 들어가봅시다!<br><br>
-      </p></span>
+      이 우주의 신비 속으로 들어가봅시다!<i class="icon_right fas fa-quote-right fa-2x"></i><br><br>
+      </p></div><br><br><hr>
       <br><br><br>
 
-        <p class="pic_2">
+      <p class="pic_2">
         <a href="https://esahubble.org/images/solar_system_b/">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/solar_system_b.jpg" alt="사진 없음"></a><br>
         <font size="2em" color="gray" class="font1">The International Astronomical  </font><br>
         <font size="2em" color="gray" class="font1">Union/Martin Kornmesser </font>
       </p>
-      <span class="box">
-      <p class="pic_1"><i class="fas fa-rocket fa-2x"></i><br>
+      <div class="box_2">
+      <p class="pic_1"><i class="icon_left fas fa-quote-left fa-2x"></i><br>
       지구 바깥에는 '우주'라는 공간이 존재하며, <br>그 곳에는 다양한 가족들이 있습니다.<br>
       별, 행성, 위성, 소행성, 성운, 성단 등등..<br>
       '우주'란 무엇일까요?<br>
       우주는 <mark>'물질과 시공간을 일정한 힘으로 담고있는 공간'</mark>을 의미합니다.<br>
-      이 우주의 신비 속으로 들어가봅시다!<br><br>
-      </p></span>
-      <br><br>
+      이 우주의 신비 속으로 들어가봅시다!<i class="icon_right fas fa-quote-right fa-2x"></i><br><br>
+      </p></div><br><br><hr>
+      <br><br><br>
   </div>
 </template>
 
@@ -66,10 +68,18 @@ div {
    width: 50px;
    margin: auto;
  }
+ .star {
+   color: aqua;
+ }
+ .first {
+   text-align: center;
+   display: inline-block;
+   margin: auto;
+ }
 .pic_1 {  
   width: 400px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   margin-left: 50px;
 }
 .pic_2 {  
@@ -88,11 +98,23 @@ img {
 .font1 {
   margin-left: 100px;
 }
-i {
+.icon_left {
+  float: left;
+  color: rosybrown;
+  margin-right: 5%;
+}
+.icon_right {
   float: right;
   color: rosybrown;
-  margin-right: 10%;
-  /* vertical-align: left; */
+  margin-right: 5%;
+}
+.box_1, .box_2 {
+  width: 450px;
+  border: solid;
+  border-color: rosybrown;
+  border-width: 5px;
+  box-shadow: 5px 5px 5px gray;
+  display: inline-block;
 }
 /*
 .arrow_box {
@@ -129,9 +151,5 @@ i {
 }*/
 /* 말풍선 css*/
 
-.box {
-  width: 400px;
-  border: solid;
-  border-color: darkblue;
-}
+
 </style>
