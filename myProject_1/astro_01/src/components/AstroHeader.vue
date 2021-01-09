@@ -14,7 +14,7 @@
               <a href="#">화성</a>
               <a href="#">목성</a>
               <a href="#">토성</a>
-              <a href="#">천욍성</a>
+              <a href="#">천왕성</a>
               <a href="#">해왕성</a>
             </div>
           </div>
@@ -96,8 +96,8 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: lightgray;
-  min-width: 160px;
+  background-color: darkgray;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
