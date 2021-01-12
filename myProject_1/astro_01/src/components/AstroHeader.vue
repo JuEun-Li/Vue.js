@@ -2,20 +2,14 @@
   <div>
       <nav>
         <ul class="mainbar">
-          <li class="list-home"><a href=""><i class="fas fa-home fa-lg"></i></a></li>
+         <li class="list-home"><a href=""><i class="fas fa-home fa-lg"></i></a></li>
           <li class="list"><a href="">개요</a></li>
 
           <div class="dropdown">
           <li class="dropdown-button1"><a href="">행성 이야기</a></li>
             <div class="dropdown-content">
-              <a href="#">수성</a>
-              <a href="#">금성</a>
-              <a href="#">지구</a>
-              <a href="#">화성</a>
-              <a href="#">목성</a>
-              <a href="#">토성</a>
-              <a href="#">천왕성</a>
-              <a href="#">해왕성</a>
+              <a href="#">암석형 행성</a>
+              <a href="#">가스형 행성</a>
             </div>
           </div>
 

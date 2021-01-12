@@ -4,6 +4,9 @@
     <AstroBackground></AstroBackground>
     <AstroMain></AstroMain>
     <AstroFooter></AstroFooter>
+
+    <!-- 라우터 화면 출력 -->
+    <router-view></router-view>
    </div>
 </template>
 
