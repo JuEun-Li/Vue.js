@@ -1,28 +1,17 @@
 <template>
   <div id="app">
-    <!-- <AstroHeader></AstroHeader>
-    <AstroBackground></AstroBackground>
-    <AstroMain></AstroMain>
-    <AstroFooter></AstroFooter> -->
-
-    <!-- 라우터 화면 출력 -->
+    <tool-bar></tool-bar>
     <router-view></router-view>
-   </div>
+  </div>
 </template>
 
 <script>
-//  import AstroHeader from './components/AstroHeader.vue'
-//  import AstroBackground from './components/AstroBackground.vue'
-//  import AstroMain from './components/AstroMain.vue'
-//  import AstroFooter from './components/AstroFooter.vue'
-  
+import ToolBar from './components/ToolBar.vue';
+
 export default {
-//   components: {
-//     'AstroHeader': AstroHeader,
-//     'AstroBackground': AstroBackground,
-//     'AstroMain': AstroMain,
-//     'AstroFooter': AstroFooter
-//   }
+  components: {
+    ToolBar
+  }
 }
 </script>
 
