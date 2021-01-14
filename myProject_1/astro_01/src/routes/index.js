@@ -16,19 +16,19 @@ export default new VueRouter({
         },
         {
         path:'/home',
-        component:'AstroHome',
+        component: AstroHome,
     },
     {
         path:'/planet',
-        component:'AstroPlanet',
+        component: AstroPlanet,
     },
     {
         path:'/satellite',
-        component:'AstroSatellite',
+        component: AstroSatellite,
     },
     {
         path:'/quiz',
-        component:'AstroQuiz',
+        component: AstroQuiz
     }
 
     ]
