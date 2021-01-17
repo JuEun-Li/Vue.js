@@ -4,10 +4,10 @@
         <ul class="mainbar">
          <li class="list-home"><router-link to="/home"><i class="fas fa-home fa-lg"></i></router-link></li>
 
-          <li class="list"><router-link to="/home">home</router-link></li>
+          <li class="list"><router-link to="/home">개요</router-link></li>
 
           <div class="dropdown">
-          <li class="dropdown-button1"><router-link to="/planet">planet</router-link></li>
+          <li class="dropdown-button1"><router-link to="/planet">행성 이야기</router-link></li>
             <div class="dropdown-content">
               <a href="#">암석형 행성</a>
               <a href="#">가스형 행성</a>
@@ -15,7 +15,7 @@
           </div>
 
           <div class="dropdown">
-          <li class="dropdown-button2"><router-link to="/satellite">satellite</router-link></li>
+          <li class="dropdown-button2"><router-link to="/satellite">위성 이야기</router-link></li>
             <div class="dropdown-content">
               <a href="#">달</a>
               <a href="#">타이탄</a>
@@ -24,7 +24,7 @@
           </div>
 
           <div class="dropdown">
-          <li class="dropdown-button3"><router-link to="/quiz">quiz</router-link></li>
+          <li class="dropdown-button3"><router-link to="/quiz">퀴즈</router-link></li>
           <div class="dropdown-content">
               <a href="#">참여 방법</a>
               <a href="#">문제 풀기</a>

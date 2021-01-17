@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br>
     <h2>개요</h2><br>
     <font size="3em" color="navy" class="font2">home > 개요</font><br><br>
       <hr><br>
@@ -68,8 +69,6 @@ export default {
 <style scoped>
 div {
   vertical-align: middle;
-  /* margin-left: 5%; */
-  /* margin-right: 5%; */
 }
  hr {
    width: 600px;
