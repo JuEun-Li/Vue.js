@@ -9,7 +9,7 @@
           <div class="dropdown">
           <li class="dropdown-button1"><router-link to="/planet">행성 이야기</router-link></li>
             <div class="dropdown-content">
-              <a href="#">암석형 행성</a>
+              <a href="#">지구형 행성</a>
               <a href="#">가스형 행성</a>
             </div>
           </div>

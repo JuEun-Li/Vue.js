@@ -80,11 +80,13 @@ div {
  }
  .star {
    color: aqua;
+   padding-right: 15px;
  }
  .first {
    display: inline;
    margin-left: 28%;
    color: gray;
+   padding-right: 15px;
  }
 .pic_1 {  
   width: 400px;
