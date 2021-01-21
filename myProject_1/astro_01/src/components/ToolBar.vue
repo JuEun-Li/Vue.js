@@ -30,6 +30,10 @@
               <a href="#">문제 풀기</a>
             </div>
           </div>
+
+           <form name= "fo" method="get">
+					<input type="text" size="20" value="" id = "name">
+					<input type="submit" value=""><i class="search fas fa-search"></i> </form>
         </ul>
       </nav>
   </div>
@@ -37,7 +41,7 @@
 
 <script>
 export default {
-
+  
 }
 </script>
 
@@ -70,7 +74,7 @@ a {
   padding-left: 50px;
 }
 
-/*--------------여기서부터 드랍다운 네비바*/
+/*--------------------------------여기서부터 드랍다운 네비바*/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -83,7 +87,8 @@ a {
 }
 .dropdown-content a:hover {
   /* background-color: blueviolet; */
-  background-color: #f1f1f1;
+  background-color: darkgray;
+  /* background-color: #f1f1f1; */
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -91,9 +96,20 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: darkgray;
+  background-color: black;
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+}
+
+form {
+  padding-left: 5%;
+	padding-top: 15px;
+}
+.search {
+  color: white;
+  padding: 2px;
+  vertical-align: middle;
+  /* background-color: darkgray; */
 }
 </style>
