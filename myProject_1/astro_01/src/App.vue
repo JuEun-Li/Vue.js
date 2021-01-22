@@ -2,8 +2,8 @@
   <div id="app">
     <tool-bar></tool-bar>
     <back-ground></back-ground>
-    <router-view></router-view>
     <footer></footer>
+    <router-view></router-view>
   </div>
 </template>
 

@@ -2,7 +2,7 @@
   <div>
     <br>
     <h2>개요</h2><br>
-    <font size="3em" color="navy" class="font2">home > 개요</font><br><br>
+    <span class="font2"><font size="3em" color="navy">home > 개요</font></span><br><br>
       <hr><br>
       
     <div class="first">
@@ -83,8 +83,10 @@ div {
    padding-right: 15px;
  }
  .first {
-   display: inline;
-   margin-left: 28%;
+   display: inline-block;
+   width:100%;
+   text-align: center;
+   /* margin-left: 28%; */
    color: gray;
    padding-right: 15px;
  }
@@ -112,7 +114,9 @@ img {
 }
 .font2 {
   display: inline-block;
-  margin-left: 46%;
+  width:100%;
+  text-align: center;
+  /* margin-left: 46%; */
 }
 .icon_left {
   float: left;

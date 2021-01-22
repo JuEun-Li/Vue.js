@@ -1,14 +1,14 @@
 <template>
   <div>
     <br>
-    <h2>행성 이야기</h2><br>
-    <font size="3em" color="navy" class="font2">행성 이야기 > 지구형 행성</font><br><br>
+    <h2>지구형 행성</h2><br>
+    <span class="font2"><font size="3em" color="navy">행성 이야기 > 지구형 행성</font></span><br><br>
       <hr class="hr1"><br>
       
 
-    <div class="first">
+    <span class="first">
         <i class="star fas fa-star-and-crescent fa-2x"></i>
-      우리 태양계 행성중 지구형 행성은 [ 수성, 금성, 지구, 화성 ] 입니다.</div><br><br><br><br><br>
+      우리 태양계 행성중 지구형 행성은 [ 수성, 금성, 지구, 화성 ] 입니다.</span><br><br><br><br><br>
     
 
 
@@ -144,13 +144,17 @@ export default {
    padding-right: 15px;
  }
  .first {
-   display: inline;
-   margin-left: 28%;
+   width:100%;
+   text-align: center;
+   display: inline-block;
+   /* margin-left: 28%; */
    color: gray;
  }
  .font2 {
+   width: 100%;
   display: inline-block;
-  margin-left: 42%;
+  text-align: center;
+  /* margin-left: 42%; */
 }
 
 .question {
