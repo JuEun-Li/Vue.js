@@ -13,9 +13,10 @@ export default {
 
 <style scoped>
     div {
-        background-color: navy;
+        background-color: skyblue;
+        margin-top: 7%;
         margin-bottom: 0;
         width: 100%;
-        height: 100px;
+        height: 150px;
     }
 </style>

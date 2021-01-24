@@ -8,11 +8,22 @@
 
     <span class="first">
         <i class="star fas fa-star-and-crescent fa-2x"></i>
-      우리 태양계 행성중 지구형 행성은 [ 수성, 금성, 지구, 화성 ] 입니다.</span><br><br><br><br><br>
+      우리 태양계 행성중 지구형 행성은 [ 수성, 금성, 지구, 화성 ] 입니다.</span><br><br><br><br>
+
+      <a class="top" href="#" title="맨 위로"> <i class="fas fa-arrow-up fa-2x"></i><br></a>
     
 
+    <table class="planet_table">
+      <tr>
+        <td onClick="location.href='#mercury'">수성</td>
+        <td onClick="location.href='#venus'">금성</td>
+        <td onClick="location.href='#mars'">화성</td>
+      </tr>
+    </table><br><br><br><br>
 
-    <i class="question fas fa-mercury fa-2x"></i>
+
+
+    <i class="question fas fa-mercury fa-2x" id='mercury'></i>
      <strong>수성(水星, Mercury)이란?</strong>
      <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3571319&cid=58947&categoryId=58980">
@@ -43,8 +54,8 @@
 
 
 
-    <i class="question fas fa-venus fa-2x"></i>
-     <strong>금성(金星, Marcury)이란?</strong>
+    <i class="question fas fa-venus fa-2x" id='venus'></i>
+     <strong>금성(金星, Venus)이란?</strong>
 
      <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3571332&cid=58947&categoryId=58980">
@@ -83,7 +94,7 @@
 
 
 
-    <i class="question fas fa-mars fa-2x"></i>
+    <i class="question fas fa-mars fa-2x" id='mars'></i>
      <strong>화성(火星, Mars)이란?</strong>
 
      <p class="pic_1">
@@ -177,5 +188,40 @@ export default {
   padding-left: 20px;
   width: 200px;
   object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
+}
+
+
+/* -----------------------------------table 서식 */
+
+.planet_table {
+  width: 35%;
+  /* height: 10%; */
+  margin-left: auto; margin-right: auto; /* 표 가운데로 */
+  text-align: center;
+  background-color: aliceblue;
+  border-collapse: collapse; /* 선 없애기 */
+  box-shadow: 2px 2px 2px lightgray; 
+  cursor: pointer;
+}
+td {
+  padding: 3%;
+}
+tr :nth-child(2) {
+  background-color: rgb(193, 229, 252);
+}
+
+.top {
+  width: 5%;
+  height: 7%;
+  padding-top: 1%;
+  background-color: aliceblue;
+  color:steelblue;
+  box-shadow: 2px 2px 2px lightgray;
+  text-align: center;
+  display: scroll;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  text-decoration: none;
 }
 </style>
