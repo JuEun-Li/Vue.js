@@ -33,7 +33,7 @@ export default new VueRouter({
     },
     {
         path:'/find',
-        component: Findview
+        component: Findview,
     }
 
     ]
