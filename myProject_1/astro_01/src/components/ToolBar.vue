@@ -31,9 +31,17 @@
             </div>
           </div>
 
-           <form name= "fo" method="get">
+           <!-- <form name= "fo" method="get">
 					<input type="text" size="20" value="" id = "name">
-					<input type="submit" value=""><i class="search fas fa-search"></i> </form>
+          <input type="submit" value=""><i class="search fas fa-search"></i> </form> -->
+					
+          <form class='search'>
+             <input class = "keyword" type = 'text' name = 'search' maxlength= 200 value="" autocomplete="off">
+
+            <button class = "img-button" type = "submit" name = "click" value = "">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
         </ul>
       </nav>
   </div>
@@ -41,7 +49,7 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 
@@ -104,7 +112,7 @@ a {
 
 form {
   padding-left: 5%;
-	padding-top: 15px;
+	margin-top: 1%;
 }
 .search {
   color: white;

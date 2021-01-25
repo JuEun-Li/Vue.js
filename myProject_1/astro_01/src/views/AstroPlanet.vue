@@ -13,13 +13,23 @@
       <a class="top" href="#" title="맨 위로"> <i class="fas fa-arrow-up fa-2x"></i><br></a>
     
 
-    <table class="planet_table">
+    <table id="planet_table" title="클릭시 해당 내용으로 넘어갑니다.">
       <tr>
-        <td onClick="location.href='#mercury'">수성</td>
-        <td onClick="location.href='#venus'">금성</td>
-        <td onClick="location.href='#mars'">화성</td>
+        <td onClick="location.href='#mercury'" 
+        v-bind:style="{'white': !clicked, 'blue': clicked}"
+        v-on:click ="clicked = !clicked">수성</td>
+        
+        <td onClick="location.href='#venus'" 
+        v-bind:class="{'white': !clicked, 'blue': clicked}" 
+        v-on:click="clicked = !clicked">금성</td>
+
+        <td onClick="location.href='#mars'" 
+        v-bind:class="{'white': !clicked, 'blue': clicked}" 
+        v-on:click="clicked = !clicked">화성</td>
       </tr>
-    </table><br><br><br><br>
+    </table>
+    
+    <br><br><br><br>
 
 
 
@@ -38,7 +48,7 @@
     <strong>태양계에서 가장 빠른 행성</strong><br><br><br>
 
     <span class="answer-box">
-      태양계 첫번째 행성인 수성은 전령의 신 헤르메스(로마식 이름 머큐리)에서 따왔다.<br>
+      <!-- 태양계 첫번째 행성인 수성은 전령의 신 헤르메스(로마식 이름 머큐리)에서 따왔다.<br>
     수성이 태양과 매우 가까이 있기 때문에 (태양의 중력의 영향으로)
      매우 빠른 속도로 공전 하고 있다는 점에서 유래 되었다.<br><br>
      
@@ -49,8 +59,39 @@
     해가 질 무렵(저녁), 그리고 동이 트기 전(새벽) 아주 잠깐 관측이 가능하다.<br><br>
 
     수성의 큰 특징중 하나는 일교차이다. 대기층이 매우 얇아 대기의 순환이 거의 일어나지 않으며, 바다가 없기 때문에 적도와 극의 온도 차가 극심하다.<br>
-    긴 밤에는 (섭씨)영하 185도까지 내려가지만, 긴 낮에는 470도까지 올라간다.<br><br><br><br><br><br>
-    </span>
+    긴 밤에는 (섭씨)영하 185도까지 내려가지만, 긴 낮에는 470도까지 올라간다.<br> -->
+    
+    <table class="answer-table">
+      <tr>
+        <td><h2 style="text-align:left">개요</h2></td>
+        <td><strong>유래</strong></td>
+        <td>전령의 신 헤르메스(로마식 이름 머큐리)에서 유래되었다.<br>
+            수성이 태양과 매우 가까이 있기 때문에 (태양의 중력의 영향으로)<br>
+            매우 빠른 속도로 공전 하고 있다는 것이 그 이유.<br></td>
+      </tr>
+      <tr>
+        <td></td> <td><strong>태양과의 거리</strong></td><td>0.4AU</td>
+      </tr>
+      <tr>
+        <td></td> <td><strong>공전 주기</strong></td><td>88일(수성에서의 1년은 88일)</td>
+      </tr></table>
+      <hr class="hr3">
+
+      <table class="answer-table">
+      <tr>
+        <td><h2 style="text-align:left">특징</h2></td>
+        <td><strong>관측 가능 시기</strong></td>
+        <td> 밤에는 관측이 불가능하다.<br>
+            해가 질 무렵(저녁), 그리고 동이 트기 전(새벽) 아주 잠깐 관측이 가능하다.</td>
+      </tr>
+      <tr>
+        <td></td> <td><strong>큰 일교차</strong>
+        </td><td>대기층이 매우 얇아 대기의 순환이 거의 일어나지 않으며, <br>
+          바다가 없기 때문에 적도와 극의 온도 차가 극심하다.<br>
+    긴 밤에는 (섭씨)영하 185도까지 내려가지만, 긴 낮에는 470도까지 올라간다.</td>
+      </tr>
+    </table>
+    </span> <br><br><br><br><br>
 
 
 
@@ -117,22 +158,25 @@
       금성과 더불어 그나마 지구와 유사한 조건을 가지고 있어<br>
       태양계 행성중 [큐리오시티, 인사이트 등] 수 많은 탐사선이 탐사를 진행한 행성이다. 그만큼 UFO와 외계인에 대한 각종 루머가 가장 많은 행성이다.<br>
       실제로 생명체가 발견되지는 않았으나, 물이 존재하기 때문에 생명체가 존재할 가능성이 조금은 남아있다.<br><br>
-
-
-
-
-
     </span>
   </div>
 </template>
 
 <script>
 export default {
-
+  data: {
+   clicked: false
+  }
 }
 </script>
 
 <style scoped>
+ .white {
+       background-color: white;
+   }
+   .blue {
+       background-color: blue;
+   }
   div {
     vertical-align: middle;
   }
@@ -142,10 +186,14 @@ export default {
    border: solid 1px;
  }
   .hr2 {
-   width: 800px;
+   width: 900px;
    color: lightgray;
    border: solid 1px;
-   /* margin-left: 15%; */
+ }
+ .hr3 {
+   width: 750px;
+   color: lightgray;
+   border: solid 1px;
  }
   h2 {
    text-align: center;
@@ -169,19 +217,31 @@ export default {
 }
 
 .question {
-   margin-left: 20%;
+   margin-left: 15%;
    padding-right: 15px;
    color: lightsteelblue;
  }
  .answer {
-   margin-left: 20%;
+   margin-left: 15%;
    padding-right: 15px;
    color: pink;
  }
  .answer-box {
-   display: block;
-   margin-left: 20%;
-   margin-right: 20%;
+   display: inline-block;
+   border: 3px dashed lightgray;
+   padding: 1% 3%;
+   margin-left: 15%;
+   margin-right: 15%;
+ }
+ .answer-table td{
+   min-width: 130px;
+   padding: 1%;
+   border-collapse: collapse;
+  font-size: 15px;
+  vertical-align: text-top;
+ }
+ .answer-table tr :nth-child(1) { /*테이블 큰 제목*/
+   /* font-size: 25px; */
  }
   img, .pic_1 {
   display: inline-block;
@@ -193,29 +253,29 @@ export default {
 
 /* -----------------------------------table 서식 */
 
-.planet_table {
+#planet_table {
   width: 35%;
-  /* height: 10%; */
   margin-left: auto; margin-right: auto; /* 표 가운데로 */
   text-align: center;
-  background-color: aliceblue;
-  border-collapse: collapse; /* 선 없애기 */
-  box-shadow: 2px 2px 2px lightgray; 
+  background-color: white;
+  border-collapse: collapse; /*선 없애기*/
+  border: 0.5px solid lightgray;
+  /* box-shadow: 2px 2px 2px lightgray;  */
   cursor: pointer;
 }
 td {
   padding: 3%;
 }
 tr :nth-child(2) {
-  background-color: rgb(193, 229, 252);
+  /* background-color: rgb(193, 229, 252); */
 }
 
 .top {
-  width: 5%;
-  height: 7%;
+  width: 4.5%;
+  height: 6.5%;
   padding-top: 1%;
-  background-color: aliceblue;
-  color:steelblue;
+  background-color: lightgray;
+  color:gray;
   box-shadow: 2px 2px 2px lightgray;
   text-align: center;
   display: scroll;
@@ -223,5 +283,6 @@ tr :nth-child(2) {
   bottom: 5%;
   right: 5%;
   text-decoration: none;
+  opacity:0.7;
 }
 </style>
