@@ -24,12 +24,12 @@ export default {
  }
 
  span {
-   position:absolute;
-  margin-top: 16%;
+   position: absolute;
+  margin-top: 16.5%;
   width: 100%;
   background: black;
   height: 52px;
-  display: block;
+  display: inline-block;
   /* flex-direction: row; */
   /* list-style-type: none; */
   opacity: 0.8; /*흐리게 조절*/
