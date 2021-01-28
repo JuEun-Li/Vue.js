@@ -17,11 +17,12 @@
     <div class="main">
      <transition-group name="fade" tag="div" mode="in-out">
             <div v-for="i in [currentIndex]" :key="i">
+              <!-- <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg"> -->
                 <div class="color" :style="{ backgroundColor : currentColor }"></div>
             </div>
         </transition-group>
-        <a class="prev" @click="prev" href="#">❮</a>
-        <a class="next" @click="next" href="#">❯</a>
+        <a class="prev" @click="prev">❮</a>
+        <a class="next" @click="next">❯</a>
     </div>
   </div>
 </template>
@@ -33,10 +34,12 @@ export default {
         return {
             // 슬라이더 이미지 배열
             color : [
+              // src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg",
+              // src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg",
                 "green",
                 "red",
                 "blue",
-                "orange"
+                "orange",
             ],
             // 타이머
             timer : null,
@@ -52,12 +55,10 @@ export default {
         // 슬라이드 시작
         startSlide : function() {
             this.timer = setInterval(this.next, 4000);
-
         },
         // 다음 슬라이드
         next : function () {
             this.currentIndex += 1;
-
         },
         // 이전 슬라이드
         prev : function () {
@@ -74,7 +75,6 @@ export default {
 </script>
 
 <style scoped>
-
 div {
     vertical-align: middle;
   }
@@ -117,7 +117,6 @@ div {
   opacity:0.7;
 }
 /* ---------------------------------------여기까지 기본 서식 */
-
   .fade-enter-active,
 .fade-leave-active {
     transition: all .5s ease;
