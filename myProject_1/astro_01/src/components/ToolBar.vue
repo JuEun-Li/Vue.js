@@ -63,6 +63,7 @@ export default {
   list-style-type: none;
   /* position: fixed; */
   position: relative;
+  /* width: 100%; */
 }
 
 a {

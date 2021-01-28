@@ -16,7 +16,7 @@ export default {
     top: 0;
     padding: 0;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     height: 250px;
    background-color: aliceblue;
    background-image:url('https://cdn.spacetelescope.org/archives/images/thumb700x/heic0709b.jpg');
@@ -26,7 +26,7 @@ export default {
  span {
    position:absolute;
   margin-top: 16%;
-  width: 100vw;
+  width: 100%;
   background: black;
   height: 52px;
   display: block;
