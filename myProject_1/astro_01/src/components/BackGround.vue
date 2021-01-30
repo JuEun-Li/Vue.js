@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <span></span>
+  <div class="app">
+    <div class="one"></div>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped>
- div {
+ .app {
    position: relative;
     top: 0;
     padding: 0;
@@ -23,13 +23,14 @@ export default {
    /*Credit: NASA, ESA, Marc Postman (STScI), and the CLASH team. */
  }
 
- span {
-   position:absolute;
-  margin-top: 16%;
+ .one {
+   position: absolute;
+   margin-top: 198px;
+  vertical-align: bottom;
   width: 100%;
   background: black;
   height: 52px;
-  display: block;
+  display: inline-block;
   /* flex-direction: row; */
   /* list-style-type: none; */
   opacity: 0.8; /*흐리게 조절*/

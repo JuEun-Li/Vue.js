@@ -16,8 +16,10 @@
 
     <div class="main">
      <transition-group name="fade" tag="div" mode="in-out">
+
             <div v-for="i in [currentIndex]" :key="i">
               <!-- <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg"> -->
+              <!-- <img src="https://ncc-phinf.pstatic.net/ncc01/2011/2/16/233/3.jpg?type=w323"> -->
                 <div class="color" :style="{ backgroundColor : currentColor }"></div>
             </div>
         </transition-group>
@@ -33,9 +35,13 @@ export default {
     data() {
         return {
             // 슬라이더 이미지 배열
+            // color:[{
+            //   thumbnail: 'https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg'
+            // },
+            // {
+            //   thumbnail: 'https://ncc-phinf.pstatic.net/ncc01/2011/2/16/233/3.jpg?type=w323'
+            // }],
             color : [
-              // src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg",
-              // src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg",
                 "green",
                 "red",
                 "blue",
