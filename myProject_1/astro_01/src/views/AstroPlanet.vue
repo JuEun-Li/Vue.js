@@ -16,7 +16,7 @@
     <table id="planet_table" title="클릭시 해당 내용으로 넘어갑니다.">
       <tr> 
         <td
-        onClick="location.href='#mercury'" 
+        onClick="location.href='#mercury'"
         v-bind:class="{'white': !clicked1, 'blue': clicked1}" 
         v-on:click="clicked1 = !clicked1">수성</td>
   
@@ -267,6 +267,7 @@
 
 <script>
 export default {
+  el: "#planet_table",
   data: function(){
    return {
      clicked1: false,
