@@ -31,6 +31,12 @@
             </div>
           </div>
 
+          <div class="dropdown">
+          <li class="dropdown-button4"><router-link to="/board/list">게시판</router-link></li>
+          <div class="dropdown-content">
+            </div>
+          </div>
+
            <!-- <form name= "fo" method="get">
 					<input type="text" size="20" value="" id = "name">
           <input type="submit" value=""><i class="search fas fa-search"></i> </form> -->

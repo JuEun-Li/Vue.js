@@ -1,10 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+
 import AstroHome from '../views/AstroHome.vue';
 import AstroPlanet from '../views/AstroPlanet.vue';
 import AstroSatellite from '../views/AstroSatellite.vue';
 import AstroQuiz from '../views/AstroQuiz.vue';
+
 import Findview from '../views/Findview.vue';
+import AstroList from '../views/board/AstroList.vue';
 
 Vue.use(VueRouter);
 
@@ -34,6 +37,10 @@ export default new VueRouter({
     {
         path:'/find',
         component: Findview,
+    },
+    {
+        path:'/board/list',
+        component: AstroList
     }
 
     ]
