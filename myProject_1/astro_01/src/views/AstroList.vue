@@ -15,23 +15,26 @@ export default {
   name: 'Home',
   data: function() {
     return {
-      user: null
+      user: null // component에 user 속성을 만든다.
     }
   },
   methods: {
       login(service) {
         let provider;
+
         if (service == 'google') 
           provider = new firebase.auth.GoogleAuthProvider();
+
         else if (service == 'github')
           provider = new firebase.auth.GithubAuthProvider();
+
         firebaseApp.auth()
           .signInWithPopup(provider)
-          .then((result) => {
+          .then((result) => { // 로그인 성공시 실행되는 코드
             console.log(result);
-            this.user = result.user;
+            this.user = result.user; // 로그인시 사용자 정보 객체를 컴포넌트의 user 속성에 대입
           })
-          .catch((error) => {
+          .catch((error) => { // 로그인 실패시 실행되는 코드
             alert("로그인 실패 " + error.message)
             console.log(error);
           });
@@ -40,7 +43,7 @@ export default {
         firebaseApp.auth().signOut()
         .then(() => { this.user = null; })
         .catch((error) => { console.log(error); });
-      }    
+      } // 로그아웃   
   }
 }
 </script>
