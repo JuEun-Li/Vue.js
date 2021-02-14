@@ -3,11 +3,10 @@ import VueRouter from 'vue-router';
 
 import AstroHome from '../views/AstroHome.vue';
 import AstroPlanet from '../views/AstroPlanet.vue';
+import Planet2 from '../views/Planet2.vue';
 import AstroSatellite from '../views/AstroSatellite.vue';
-import AstroQuiz from '../views/AstroQuiz.vue';
-
-import Findview from '../views/Findview.vue';
-import AstroList from '../views/board/AstroList.vue';
+import Satellite2 from '../views/Satellite2.vue';
+import AstroList from '../views/AstroList.vue';
 
 Vue.use(VueRouter);
 
@@ -27,19 +26,19 @@ export default new VueRouter({
         component: AstroPlanet,
     },
     {
+        path:'/planet2',
+        component: Planet2,
+    },
+    {
         path:'/satellite',
         component: AstroSatellite,
     },
     {
-        path:'/quiz',
-        component: AstroQuiz,
+        path:'/satellite2',
+        component: Satellite2,
     },
     {
-        path:'/find',
-        component: Findview,
-    },
-    {
-        path:'/board/list',
+        path:'/list',
         component: AstroList
     }
 
