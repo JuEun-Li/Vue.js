@@ -15,7 +15,7 @@
     <span class="round_table">
         <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3567177&cid=58945&categoryId=58974">
-        <img src="https://ncc-phinf.pstatic.net/webtop01/2009/4/22/226/3.jpg?type=w323" alt="사진 없음"></a></p>
+        <img src="https://ncc-phinf.pstatic.net/webtop01/2009/4/22/226/3.jpg?type=w323" alt="사진 없음"></a></p><br>
         <h3 style="color: black">이오</h3><br>
         <button type="button" @click="showDialog1 = true" class="btn_shape">상세 정보</button>
     </span>
@@ -23,7 +23,7 @@
     <span class="round_table">
         <p class="pic_1">
         <a href="https://esahubble.org/images/opo1633a/">
-        <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/opo1633a.jpg" alt="사진 없음"></a></p>
+        <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/opo1633a.jpg" alt="사진 없음"></a></p><br>
         <h3 style="color: black">유로파</h3><br>
         <button type="button" @click="showDialog2 = true" class="btn_shape">상세 정보</button>
     </span>
@@ -31,7 +31,7 @@
     <span class="round_table">
         <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3567177&cid=58945&categoryId=58974">
-        <img src="https://ncc-phinf.pstatic.net/webtop01/2009/4/22/51/2.jpg?type=w323" alt="사진 없음"></a></p>
+        <img src="https://ncc-phinf.pstatic.net/webtop01/2009/4/22/51/2.jpg?type=w323" alt="사진 없음"></a></p><br>
         <h3 style="color: black">가니메데</h3><br>
         <button type="button" @click="showDialog3 = true" class="btn_shape">상세 정보</button>
     </span>
@@ -39,7 +39,7 @@
     <span class="round_table">
         <p class="pic_1">
         <a href="https://nssdc.gsfc.nasa.gov/image/planetary/jupiter/callisto.jpg">
-        <img src="https://nssdc.gsfc.nasa.gov/image/planetary/jupiter/callisto.jpg" alt="사진 없음"></a></p>
+        <img src="https://nssdc.gsfc.nasa.gov/image/planetary/jupiter/callisto.jpg" alt="사진 없음"></a></p><br>
         <h3 style="color: black">칼리스토</h3><br>
         <button type="button" @click="showDialog4 = true" class="btn_shape">상세 정보</button>
     </span><br><br>

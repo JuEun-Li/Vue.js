@@ -10,7 +10,10 @@
       우주는 '물질과 시공간을 일정한 힘으로 담고있는 공간'을 의미합니다.</div><br><br><br><br>
 
     <a class="top" href="#" title="맨 위로"> <i class="fas fa-arrow-up fa-2x"></i><br></a>
+    
+    <!-- --------------------------------------------- -->
 
+    <div class="main">
     <p class="pic_1">
         <a href="https://esahubble.org/images/heic0715a/">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0715a.jpg" alt="사진 없음"></a><br>
@@ -59,6 +62,7 @@
           <i class="icon_right3 fas fa-quote-right fa-2x"></i><br><br>
         </p></div><br><br>
         <br><br><br>
+        </div>
   </div>
 </template>
 
@@ -68,6 +72,9 @@ export default {
 </script>
 
 <style scoped>
+.main {
+  text-align: center;
+}
 div {
   vertical-align: middle;
 }
@@ -87,7 +94,6 @@ div {
    display: inline-block;
    width:100%;
    text-align: center;
-   /* margin-left: 28%; */
    color: gray;
    padding-right: 15px;
  }
@@ -95,76 +101,79 @@ div {
   width: 400px;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 50px;
 }
 .pic_2 {  
   width: 400px;
   display: inline-block;
   vertical-align: top;
-  margin-left: 50px;
 }
 img {
-  /* display: inline; */
-  margin-left: 100px;
   width: 300px;
   object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
 }
 /* -------------- img 관련 태그들 */
 .font1 {
-  margin-left: 100px;
+  float: left;
+  margin-left: 15%;
 }
 .font2 {
   display: inline-block;
   width:100%;
   text-align: center;
-  /* margin-left: 46%; */
 }
+
 /* 따옴표 아이콘 시작 */
 .icon_left1 {
   float: left;
-  color: lightblue;;
+  color: rgb(253, 223, 236);
   margin-right: 5%;
 }
 .icon_right1 {
   float: right;
-  color: lightblue;;
+  color: rgb(253, 223, 236);
   margin-right: 5%;
 }
 .icon_left2 {
   float: left;
-  color: rgb(223, 199, 247);
+  color: rgb(211, 235, 247);
   margin-right: 5%;
 }
 .icon_right2 {
   float: right;
-  color: rgb(223, 199, 247);
+  color: rgb(211, 235, 247);
   margin-right: 5%;
 }
 .icon_left3 {
   float: left;
-  color: rgb(169, 217, 247);
+  color: rgb(224, 222, 239);
   margin-right: 5%;
 }
 .icon_right3 {
   float: right;
-  color: rgb(169, 217, 247);
+  color: rgb(224, 222, 239);
   margin-right: 5%;
 }
 /* 따옴표 아이콘 끝*/
 /* 박스 서식 시작 */
 .box_1, .box_2, .box_3 {
-  margin-left: 10%;
-  width: 450px;
+  margin-left: 5%;
+  max-width: 100%;
+  min-width: 40%;
   border: 7px solid;
-  border-color: lightblue;;
-  box-shadow: 7px 7px 7px lightgray;
+  font-size: 100%;
+  text-align:center;
+
+  border-color: rgb(253, 223, 236);
+  box-shadow: 7px 7px 7px rgb(253, 223, 236);
   display: inline-block;
 }
 .box_2{
-  border-color: rgb(223, 199, 247);
+  border-color: rgb(211, 235, 247);
+  box-shadow: 7px 7px 7px rgb(211, 235, 247);
 }
 .box_3{
-  border-color: rgb(169, 217, 247);
+  border-color: rgb(224, 222, 239);
+  box-shadow: 7px 7px 7px rgb(224, 222, 239);
 }/* 박스 서식 끝 */
 /*
 .arrow_box {
