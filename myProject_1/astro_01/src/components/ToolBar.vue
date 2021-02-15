@@ -35,13 +35,19 @@
           </div> -->
 
           <div class="dropdown">
-          <li><router-link to="/board">채팅</router-link></li>
+          <li><router-link to="/chatting">채팅</router-link></li>
+          <div class="dropdown-content">
+   
+            </div>
+          </div>
+          <div class="dropdown">
+          <li><router-link to="/list">게시판</router-link></li>
           <div class="dropdown-content">
    
             </div>
           </div>
 
-          <li class="login-button"><router-link to="/list">
+          <li class="login-button"><router-link to="/login">
           <i class="fas fa-sign-in-alt fa-lg"></i> Login
           </router-link></li>
   
@@ -69,8 +75,8 @@ nav {
   display: flex;
   justify-content: space-around;
   /* align-items: center; */
-  min-height: 8vh;
   width: 100%;
+  min-width: 10%;
 }
 .mainbar{
   background: rgb(125, 157, 168);
@@ -82,7 +88,7 @@ nav {
   flex-direction: row;
 }
 a {
-  width: 90px;
+  width: 80px;
   /* margin-left: 20%; */
   /* margin-right: 20%; */
   /* padding-left: 50%; */
@@ -120,14 +126,10 @@ a {
 }
 /* 마우스 호버시 밑줄 그리기 끝*/
 .list-home{
-  margin-right: 7%;
-  /* padding-right: 100px; */
-  margin-left: 3%;
-  padding-left: 3%;
-  /* padding-left: 50px; */
+  margin-right: 5%;
 }
 .login-button {
-  margin-left: 10%;
+  margin-left: 7%;
 }
 
 
