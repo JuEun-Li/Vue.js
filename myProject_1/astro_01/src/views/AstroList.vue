@@ -1,24 +1,29 @@
 <template>
   <div>
     <div class="notice-box">로그인이 필요한 서비스 입니다.</div>
-    <img :src="$store.state.user.photoURL" v-if="$store.state.user" />
-    <button type="button" @click="logout" v-if="$store.state.user">로그아웃</button>
-    <button type="button" @click="login('google')" v-if="!$store.state.user">Google 로그인</button>
-    <button type="button" @click="login('github')" v-if="!$store.state.user">Github 로그인</button>
+    <img :src="user.photoURL" v-if="user" />
+    <button type="button" @click="logout" v-if="user">로그아웃</button>
+    <button type="button" @click="login('google')" v-if="!user">Google 로그인</button>
+    <button type="button" @click="login('github')" v-if="!user">Github 로그인</button>
   </div>
 </template>
 
 <script>
 import firebase from 'firebase'
 import firebaseApp from './firebaseApp.js'
+import { mapState } from 'vuex'
 
 export default {
   name: 'Home',
-  data: function() {
-    return {
-      user: null // component에 user 속성을 만든다.
-    }
+  computed: {
+    ...mapState([ 'user' ])
   },
+
+  // data: function() {
+  //   return {
+  //     user: null // component에 user 속성을 만든다.
+  //   }
+  // },
   methods: {
       login(service) {
         let provider;

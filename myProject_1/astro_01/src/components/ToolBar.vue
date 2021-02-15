@@ -2,6 +2,7 @@
   <div>
       <nav>
         <ul class="mainbar">
+          
          <li class="list-home">
            <router-link to="/home">
           <i class="fas fa-home fa-lg"></i>
@@ -10,7 +11,7 @@
           <li class="dropdown"><router-link to="/home">개요</router-link></li>
 
           <div class="dropdown">
-          <li class="dropdown-button1"><router-link to="/planet">행성 이야기</router-link></li>
+          <li><router-link to="/planet">행성 이야기</router-link></li>
             <div class="dropdown-content">
               <router-link to="/planet">지구형 행성</router-link>
               <router-link to="/planet2">가스형 행성</router-link>
@@ -18,7 +19,7 @@
           </div>
 
           <div class="dropdown">
-          <li class="dropdown-button2"><router-link to="/satellite2">위성 이야기</router-link></li>
+          <li><router-link to="/satellite2">위성 이야기</router-link></li>
             <div class="dropdown-content">
               <router-link to="/satellite2">목성의 위성</router-link>
               <router-link to="/satellite">달</router-link>
@@ -34,12 +35,17 @@
           </div> -->
 
           <div class="dropdown">
-          <li class="dropdown-button4"><router-link to="/list">로그인</router-link></li>
+          <li><router-link to="/board">채팅</router-link></li>
           <div class="dropdown-content">
-            <router-link to="/board">게시판</router-link>
+   
             </div>
           </div>
 
+          <li class="login-button"><router-link to="/list">
+          <i class="fas fa-sign-in-alt fa-lg"></i> Login
+          </router-link></li>
+  
+          
     
           <!-- <form class='search'>
              <input class = "keyword" type = 'text' name = 'search' maxlength= 200 value="" autocomplete="off">
@@ -54,24 +60,37 @@
 
 <script>
 export default {
+  
 }
 </script>
 
 <style scoped>
+nav {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  min-height: 8vh;
+  width: 100%;
+}
 .mainbar{
-  /* background: rgb(151, 97, 151); */
-  /* background: rgb(161, 199, 212); */
   background: rgb(125, 157, 168);
   display: flex;
-  flex-direction: row;
-  margin: 0;
   list-style-type: none;
   position: relative;
+  width: 100%;
+  margin: 0;
+  flex-direction: row;
 }
 a {
   width: 90px;
+  /* margin-left: 20%; */
+  /* margin-right: 20%; */
+  /* padding-left: 50%; */
+  /* padding-right: 50%; */
   padding-left: 30px;
   padding-right: 30px;
+
+
   cursor: pointer;
   color: white;
   text-decoration: none; 
@@ -80,7 +99,7 @@ a {
   text-align: center;
   padding-bottom: 15px;
   padding-top: 20px; 
-  /* a 태그 넓이 늘리기*/
+  /* router link 태그는 a 태그이다.*/
 }
 /* 마우스 호버시 밑줄 그리기 시작*/
 .dropdown:after {    
@@ -101,9 +120,17 @@ a {
 }
 /* 마우스 호버시 밑줄 그리기 끝*/
 .list-home{
-  padding-right: 100px;
-  padding-left: 50px;
+  margin-right: 7%;
+  /* padding-right: 100px; */
+  margin-left: 3%;
+  padding-left: 3%;
+  /* padding-left: 50px; */
 }
+.login-button {
+  margin-left: 10%;
+}
+
+
 /*--------------------------------여기서부터 드랍다운 네비바*/
 .dropdown {
   position: relative;

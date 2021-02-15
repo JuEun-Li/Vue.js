@@ -1,50 +1,161 @@
 <template>
+  <div>
+      <br>
+    <h2>chatting</h2><br>
+    <span class="font2"><font size="3em" color="navy">home > chatting</font></span><br><br>
+      <hr class="hr1"><br>
 
-  <div id="app">
-      <h1><i class="fas fa-clipboard-check"></i> 할일</h1>
-      <table>
-        <tr>
-          <td>제목</td>
-          <td>날짜</td>
-        </tr>
-        <tr v-for="(todo, key) in todoMap" v-bind:key="key">
-          <td>{{ todo.title }}</td>
-          <td>{{ todo.due-date }}</td>
-        </tr>
-        <tr v-if="Object.keys(todoMap).length == 0">
-          <td colspan="2">등록된 자료가 없습니다.</td>
-        </tr>
-      </table>
+      <span class="first">
+        <i class="star fas fa-star-and-crescent fa-2x"></i>
+      궁금한 것을 물어보세요</span><br><br><br><br>
 
+      <a class="top" href="#" title="맨 위로"> <i class="fas fa-arrow-up fa-2x"></i><br></a>
+    <div class="input-box">
+    <div id="input">
+      <textarea cols="65" rows="4" v-model.trim="text" placeholder="메시지 입력" 
+                @keyup.enter.exact="sendMessage"></textarea>
+      <button type="button" @click="sendMessage">메시지 전송</button>
+    </div>
+    <div class="messages">
+      <div class="scrollable">
+        <div class="message" v-for="(message, key) in messages" v-bind:key="key">
+          <img class="photo" :src="message.photoURL" />
+          <div>
+            <div class="name">{{ message.username }}</div>
+            <div class="time">{{ message.createTime }}</div>
+            <div class="text">{{ message.text }}</div>
+          </div>
+        </div>
+      </div>
+    </div></div>
   </div>
 </template>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-  
 <script>
-// <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+import Vue from 'vue'
+import firebaseApp from './firebaseApp.js'
+import moment from 'moment'
+import { mapState } from 'vuex'
 
 export default {
-    el: '#app',
-    data: {
-        todoMap: {}
+  name: 'Chatting',
+  computed: {
+    ...mapState([ 'user' ])
+  },  
+  data() {
+    return {
+      text: "",
+      messages: { }
     }
-    window.onload = function() {
-      axios.get('https://astronomy-page02.firebaseio.com/board.json')
-           .then(response => app.todoMap = response.data);
+  },
+  methods: {
+    sendMessage() {
+      if (!this.user) {
+        alert("로그인해야 합니다.");
+        return;
+      }
+      let message = {
+        uid: this.user.uid,
+        username: this.user.displayName,
+        text: this.text,
+        createTime: moment().format("YYYY-MM-DD HH:mm:ss"),
+        photoURL: this.user.photoURL
+      }
+      firebaseApp.database().ref('messages').push(message);
+      this.text = "";
     }
-
+  },
+  mounted() {
+    this.dbRef = firebaseApp.database().ref('messages');
+    this.dbRef.on('child_added', (snapshot) => {
+      let key = snapshot.key, value = snapshot.val();
+      Vue.set(this.messages, key, value);
+    });
+  },
+  beforeDestroy() {
+    this.dbRef.off('child_added');
+  }
 }
 </script>
 
 <style scoped>
-    h1 { border-bottom: 1px solid gray; }
-div { padding: 30px; margin: 30px auto; max-width: 600px;
-  border: 1px solid #ccc; box-shadow: 3px 3px 3px #aaa;
+div {
+    vertical-align: middle;
+  }
+  .hr1 {
+   width: 600px;
+   color: lightgray;
+   border: solid 1px;
+ }
+  h2 {
+   text-align: center;
+ }
+
+.star {
+   color: skyblue;
+   padding-right: 15px;
+ }
+ .first {
+   width:100%;
+   text-align: center;
+   display: inline-block;
+   color: gray;
+ }
+ .font2 {
+   width: 100%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
 }
-li { margin-bottom: 10px; }
-input[type=text] { padding: 5px;  }
-button { padding: 0.4em 1.5em; }
+
+/* -------------------------------------- */
+
+div#input { 
+    margin-bottom: 20px; 
+}
+textarea { 
+    margin-right: 10px;
+    display: inline-block;
+    border: 2px solid lightblue;
+    box-shadow: 2px 2px 2px lightgray;
+}/*text 입력창*/
+button {
+    padding: 0.3em 1em;
+    margin-bottom: 5px;
+    vertical-align: bottom;
+    border: 1.5px solid lightblue;
+    box-shadow: 3px 3px 3px lightgray;
+    color:white;
+    background-color: lightblue;
+    border-radius: 5px;
+    outline: 0; /* 클릭시 테두리 삭제 */
+}
+.input-box {
+    width: 80%;
+    margin-left: auto; margin-right: auto;
+}
+div.scrollable { 
+    height: 600px; overflow-y: scroll; 
+    /* border: 2px solid rgb(164, 204, 206); */
+    border: 2px solid aliceblue;
+    box-shadow: 5px 5px 5px lightgray; 
+} /*스크롤바 박스*/
+
+div.messages { 
+    /* background-color: #fafafa;  */
+    background-color: aliceblue; 
+}
+div.message { 
+    margin: 10px;
+    padding: 5px;
+    border: 1.5px solid aliceblue;
+    box-shadow: 2px 2px 2px lightgray;
+    background-color: white;
+}/* 입력된 message 박스*/
+div.message > div { display: inline-block; }
+div.message div.name { font-size: 10pt; color: #666; display: inline-block; }
+div.message div.time { font-size: 9pt; color: #888; display: inline-block; margin-left: 20px; }
+div.message div.text { font-size: 11pt; color: black; margin: 10px 0; white-space: pre;}
+div.message img.photo { margin-right: 10px; width: 50px; height: 50px; vertical-align: top; }
 </style>
+
+
