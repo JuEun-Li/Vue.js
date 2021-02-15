@@ -7,6 +7,7 @@ import Planet2 from '../views/Planet2.vue';
 import AstroSatellite from '../views/AstroSatellite.vue';
 import Satellite2 from '../views/Satellite2.vue';
 import AstroList from '../views/AstroList.vue';
+import AstroBoard from '../views/AstroBoard.vue';
 
 Vue.use(VueRouter);
 
@@ -39,7 +40,11 @@ export default new VueRouter({
     },
     {
         path:'/list',
-        component: AstroList
+        component: AstroList,
+    },
+    {
+        path:'/board',
+        component: AstroBoard
     }
 
     ]

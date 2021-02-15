@@ -34,9 +34,9 @@
           </div> -->
 
           <div class="dropdown">
-          <li class="dropdown-button4"><router-link to="/list">게시판</router-link></li>
+          <li class="dropdown-button4"><router-link to="/list">로그인</router-link></li>
           <div class="dropdown-content">
-            <a href="http://localhost:8089/departments.html">2</a>
+            <router-link to="/board">게시판</router-link>
             </div>
           </div>
 
