@@ -1,12 +1,11 @@
 <template>
   <div>
       <span class="main"><strong>Astronomy-Page</strong></span>
-
-      <span class="box"> 
-          제작자: 이주은<br>
-          전화 번호: 010-5157-5004<br>
-          이메일: dlwndms61@naver.com<br>
-          </span>
+          <ul class="box">
+            <li>제작자: 이주은</li>
+            <li>전화 번호: 010-5157-5004</li>
+            <li>이메일: dlwndms61@naver.com</li>
+          </ul>
   </div>
 
 </template>
@@ -34,10 +33,10 @@ export default {
     }
     .box {
         display: inline-block;
-        font-size: 15px;
-        margin-right: 20%;
-        /* float: right; */
+        font-size: 0.9em;
+        padding-left: 30%;
         margin-top: 5%;
         vertical-align: top;
+        list-style: none;
     }
 </style>

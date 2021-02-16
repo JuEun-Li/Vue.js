@@ -26,7 +26,7 @@
           별, 행성, 위성, 소행성, 성운, 성단 등등..<br>
           '우주'란 무엇일까요?<br>
           우주는 <mark>'물질과 시공간을 일정한 힘으로 담고있는 공간'</mark>을 의미합니다.<br>
-          이 우주의 신비 속으로 들어가봅시다!<i class="icon_right1 fas fa-quote-right fa-2x"></i><br><br>
+        <i class="icon_right1 fas fa-quote-right fa-2x"></i><br>
         </p></div><br><br><hr>
         <br><br><br>
 
@@ -42,8 +42,8 @@
           [ <mark>수성, 금성, 지구, 화성, 목성, 토성, 천왕성, 해왕성</mark> ]<br> 입니다.<br>
           태양과 가장 가까운 수성부터<br>
            가장 멀리 있는 해왕성까지<br>
-          우리 태양계 행성들의 이야기를 들어봅시다!
-          <i class="icon_right2 fas fa-quote-right fa-2x"></i><br><br>
+          우리 태양계 행성들에 대해 알아봅시다!<br>
+          <i class="icon_right2 fas fa-quote-right fa-2x"></i><br>
         </p></div><br><br><br><hr>
         <br><br><br>
 
@@ -58,8 +58,8 @@
           각 행성의 인력에 의하여 그 둘레를 돌고 있는 천체를 가지고 있습니다. <br>
           바로 <mark>'위성'</mark>입니다.<br>
           지구의 위성은 '달' 하나 뿐입니다.<br>
-          다른 행성들은 어떤 위성을 가지고 있을까요?
-          <i class="icon_right3 fas fa-quote-right fa-2x"></i><br><br>
+          다른 행성들은 어떤 위성을 가지고 있을까요?<br>
+          <i class="icon_right3 fas fa-quote-right fa-2x"></i><br>
         </p></div><br><br>
         <br><br><br>
         </div>

@@ -36,29 +36,15 @@
 
           <div class="dropdown">
           <li><router-link to="/chatting">채팅</router-link></li>
-          <div class="dropdown-content">
-   
-            </div>
-          </div>
-          <div class="dropdown">
-          <li><router-link to="/list">게시판</router-link></li>
-          <div class="dropdown-content">
-   
-            </div>
           </div>
 
-          <li class="login-button"><router-link to="/login">
-          <i class="fas fa-sign-in-alt fa-lg"></i> Login
-          </router-link></li>
-  
-          
-    
-          <!-- <form class='search'>
-             <input class = "keyword" type = 'text' name = 'search' maxlength= 200 value="" autocomplete="off">
-            <button class = "img-button" type = "submit" name = "click" value = "">
-              <i class="fas fa-search"></i>
-            </button>
-          </form> -->
+          <div class="dropdown">
+          <li><router-link to="/list">게시판</router-link></li>
+          </div>
+
+          <li class="login-button">
+          <router-link to="/login">
+          <i class="fas fa-sign-in-alt fa-lg"></i> Login </router-link></li>
         </ul>
       </nav>
   </div>
@@ -74,7 +60,6 @@ export default {
 nav {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   width: 100%;
   min-width: 10%;
 }
@@ -95,7 +80,6 @@ a {
   /* padding-right: 50%; */
   padding-left: 30px;
   padding-right: 30px;
-
 
   cursor: pointer;
   color: white;
@@ -127,11 +111,12 @@ a {
 /* 마우스 호버시 밑줄 그리기 끝*/
 .list-home{
   margin-right: 5%;
-}
-.login-button {
-  margin-left: 7%;
+  margin-left: 5%;
 }
 
+.login-button {
+  margin-left: 5%; 
+}
 
 /*--------------------------------여기서부터 드랍다운 네비바*/
 .dropdown {
@@ -163,15 +148,5 @@ a {
   background-color: rgb(125, 157, 168);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-}
-/* form {
-  padding-left: 5%;
-	margin-top: 1%;
-} */
-.search {
-  color: white;
-  padding: 2px;
-  vertical-align: middle;
-  /* background-color: darkgray; */
 }
 </style>

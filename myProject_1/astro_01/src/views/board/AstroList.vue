@@ -15,7 +15,7 @@
           <td colspan="2">등록된 자료가 없습니다.</td>
         </tr>
       </table>
-            <button type="button" v-on:click="create"><i class="fas fa-plus"></i> 추가</button>
+            <button type="button" v-on:click="create"><i class="fas fa-plus"></i> 추가</button><br><br>
     </div>
 
     <div id="backdrop" v-show="showDialog"></div>
@@ -25,7 +25,7 @@
       <textarea v-model.trim="todo.body" placeholder="내용을 입력하세요"></textarea>
 
       <div>
-        <label>날짜:</label>
+        <label>날짜: </label>
         <input type="date" v-model="todo.due_date" />
         <button type="button" v-on:click="save"><i class="fas fa-check"></i> 저장</button>
         <button type="button" v-on:click="remove"><i class="fas fa-trash-alt"></i> 삭제</button>
@@ -58,7 +58,7 @@ export default {
                .then(response => this.todoMap = response.data);
         },
         edit: function(key) {
-          this.showDialog = "수정";
+          this.showDialog = "상세";
           this.todo = Object.assign({}, this.todoMap[key]);
           this.selectedKey = key;
         },
@@ -66,28 +66,20 @@ export default {
         save: function() {
           if (this.showDialog == "등록")
             axios.post('https://astronomy-page02-default-rtdb.firebaseio.com/board.json', this.todo)
-                 .then(response => {this.reload()
-                 return response});
-                 
+                 .then(response => this.reload());               
           else
             axios.put('https://astronomy-page02-default-rtdb.firebaseio.com/board/' + this.selectedKey + '.json', this.todo)
-                 .then(response => {this.reload()
-                 return response});
-          this.showDialog = false;
+                 .then(response => this.reload());
+              this.showDialog = false;
+
         },
         remove: function() {
           if (confirm("삭제하시겠습니까?") == false) return;
           axios.delete('https://astronomy-page02-default-rtdb.firebaseio.com/board/' + this.selectedKey + '.json')
-                 .then(response => {this.reload();
-                  return response})       
-          this.showDialog = false;
+                .then(response => this.reload());
+              this.showDialog = false;
         } 
   },
-  // computed:{ 
-  //   app: function() {
-  //   return this.app;
-  //   }
-  // }
 }
       window.onload = function() {
       this.app.reload();
@@ -96,19 +88,32 @@ export default {
 </script>
 
 <style scoped>
-  /* 공통 */
-button { padding: 0.4em 1.5em; }
-table { border-collapse: collapse; margin-bottom: 20px; width: 100%; }
-tr:nth-child(1) { background-color: #ddd; }
-tr.clickable:hover { background-color: #ffb; cursor: pointer; }
-td { padding: 8px;  border: 1px solid #aaa; font-size: 10pt; }
+  /* 버튼 */
+button { 
+  padding: 0.4em 1.5em;
+  margin: 0.3em;
+  background-color: rgb(106, 154, 193);
+  color: white;
+  border: 1px solid rgb(106, 154, 193);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgb(106, 154, 193);
+  outline: 0; /* 클릭시 테두리 삭제 */
+}
+button:hover { cursor: pointer; }
+
+/* 테이블 */
+table { border-collapse: collapse; margin-bottom: 30px; margin-top: 40px; width: 100%; }
+tr:nth-child(1) { background-color: rgb(225, 244, 253);}
+tr.clickable:hover { background-color: rgb(171, 223, 249); cursor: pointer; }
+td { padding: 8px;  border: 1px solid rgb(171, 223, 249); font-size: 10pt;}
 td:nth-child(2) { width: 100px; }
 
 /* main */
-div#main { padding: 30px; margin: 30px auto; max-width: 600px;
-  border: 1px solid #ccc; box-shadow: 3px 3px 3px #aaa;
+div#main { padding: 30px; margin: 50px auto; max-width: 600px;
+  border: 3px solid rgb(225, 244, 253); box-shadow: 7px 7px 7px rgb(225, 244, 253);
 }
-div#main h1 { border-bottom: 1px solid gray; }
+div#main h1 { text-align: center; padding-bottom: 6%; 
+  border-bottom: 1px solid rgb(106, 154, 193); color: rgb(106, 154, 193); }
 
 /* dialog */
 div#backdrop { 
@@ -117,15 +122,18 @@ div#backdrop {
   width: 100%; height: 100%;
   background-color: #aaa; opacity: 0.5;
 } /*팝업 창 띄워질 때 회색 배경*/
+
 div#dialog { position: absolute; top: 40%; left: 50%;
   padding: 30px; margin-left: -250px; max-width: 500px;
   background-color: white;
   border: 1px solid #ccc; box-shadow: 4px 4px 4px #666;
 } /* 팝업 창 서식*/
-div#dialog h1 { border-bottom: 1px solid gray; }
+
+div#dialog h1 { text-align: center; padding-bottom: 6%;
+  border-bottom: 1px solid rgb(106, 154, 193); color: rgb(106, 154, 193);}
 
 label, input[type=text], textarea { font-size: 10pt; }
-input[type=text], input[type=date] { height: 2.4em; padding: 4px; }
-input[type=text] { width: 100%; margin-bottom: 10px; }
-textarea { padding: 4px; width: 100%; height: 250px; margin-bottom: 10px; }
+input[type=text], input[type=date] { height: 2.4em; padding: 4px; border: 1px solid rgb(171, 223, 249);}
+input[type=text] { width: 100%; margin-bottom: 10px; border: 1px solid rgb(171, 223, 249);}
+textarea { padding: 4px; width: 100%; height: 250px; margin-bottom: 10px; border: 1px solid rgb(171, 223, 249);}
 </style>

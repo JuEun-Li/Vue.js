@@ -42,8 +42,8 @@
         <img src="https://nssdc.gsfc.nasa.gov/image/planetary/jupiter/callisto.jpg" alt="사진 없음"></a></p><br>
         <h3 style="color: black">칼리스토</h3><br>
         <button type="button" @click="showDialog4 = true" class="btn_shape">상세 정보</button>
-    </span><br><br>
-    <div class="last_box"></div>
+    </span><br><br></div>
+    <div class="last_box">
     </div>
     <br><br><br><br>
 
@@ -74,9 +74,6 @@ export default {
 </script>
 
 <style scoped>
-div {
-    vertical-align: middle;
-  }
   .hr1 {
    width: 600px;
    color: lightgray;
@@ -107,19 +104,18 @@ div {
     display: inline-block;
     text-align: center;
     padding: 1%;
-    width: 20%;
-    min-width: 200px;
+    max-width: 25% auto;
+    margin: 0.5%;
     height: 300px;
     color: black;
     font-size: 15px;
-    box-shadow: 3px 3px 3px lightgray;
+    box-shadow: 3px 3px 5px lightgray;
     /* background-color: aliceblue; */
-    padding: 1%;
     margin-top: 3%;
 }
 .table_c {
-    margin-left: 10%;
-    /* margin-right: 10%; */
+    margin-left: 12%;
+    /* margin-right: auto; */
 }
 img, .pic_1 {
   display: inline-block;
@@ -148,24 +144,9 @@ img, .pic_1 {
 .last_box {
   display: inline-block;
   width: 30%;
-  height: 5px;
+  height: 3px;
   background: lightblue;
-  margin-left: 30%;
-  margin-top: 7%;
-}
-.top {
-  width: 4.5%;
-  height: 6.5%;
-  padding-top: 1%;
-  background-color: lightgray;
-  color:gray;
-  box-shadow: 2px 2px 2px lightgray;
-  text-align: center;
-  display: scroll;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  text-decoration: none;
-  opacity:0.7;
+  margin-left: 35%;
+  margin-top: 5%;
 }
 </style>
