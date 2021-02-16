@@ -1,10 +1,10 @@
 <template>
-    <div id="app">
+    <div>
     <div id="main">
       <h1><i class="fas fa-clipboard-check"></i> 게시판</h1>
       <table>
         <tr>
-          <td>제목</td>
+          <td>목록</td>
           <td>날짜</td>
         </tr>
         <tr v-for="(todo, key) in todoMap" v-on:click="edit(key)" v-bind:key="key" class="clickable">
@@ -20,7 +20,7 @@
 
     <div id="backdrop" v-show="showDialog"></div>
     <div id="dialog" v-show="showDialog">
-      <h1><i class="fas fa-edit"></i> 할일 {{ showDialog }}</h1>
+      <h1><i class="fas fa-edit"></i> 질문 {{ showDialog }}</h1>
       <input type="text" v-model.trim="todo.title" placeholder="제목을 입력하세요"/>
       <textarea v-model.trim="todo.body" placeholder="내용을 입력하세요"></textarea>
 
@@ -40,7 +40,6 @@
 import axios from 'axios';
 
 export default {
-  el: '#app',
   data: function() {
     return {
       todoMap: {},
@@ -112,14 +111,17 @@ div#main { padding: 30px; margin: 30px auto; max-width: 600px;
 div#main h1 { border-bottom: 1px solid gray; }
 
 /* dialog */
-div#backdrop { position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+div#backdrop { 
+  position: absolute;
+  left: 0; top: 40%;
+  width: 100%; height: 100%;
   background-color: #aaa; opacity: 0.5;
-}
-div#dialog { position: absolute; top: 50px; left: 50%;
+} /*팝업 창 띄워질 때 회색 배경*/
+div#dialog { position: absolute; top: 40%; left: 50%;
   padding: 30px; margin-left: -250px; max-width: 500px;
   background-color: white;
   border: 1px solid #ccc; box-shadow: 4px 4px 4px #666;
-}
+} /* 팝업 창 서식*/
 div#dialog h1 { border-bottom: 1px solid gray; }
 
 label, input[type=text], textarea { font-size: 10pt; }

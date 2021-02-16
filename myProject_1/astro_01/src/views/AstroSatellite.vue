@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
 
     <br>
     <h2>달</h2><br>
@@ -31,7 +31,6 @@
 
 <script>
 export default {
-   el : '#app',
     data() {
         return {
             // 슬라이더 이미지 배열
