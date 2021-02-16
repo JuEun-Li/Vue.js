@@ -5,6 +5,7 @@
             <li>제작자: 이주은</li>
             <li>전화 번호: 010-5157-5004</li>
             <li>이메일: dlwndms61@naver.com</li>
+            <li>배경화면 Credit: NASA, ESA, the Hubble Heritage Team (STScI/AURA),<br> A. Nota (ESA/STScI), and the Westerlund 2 Science Team</li>
           </ul>
   </div>
 
@@ -33,7 +34,7 @@ export default {
     }
     .box {
         display: inline-block;
-        font-size: 0.9em;
+        font-size: 0.8em;
         padding-left: 30%;
         margin-top: 5%;
         vertical-align: top;
