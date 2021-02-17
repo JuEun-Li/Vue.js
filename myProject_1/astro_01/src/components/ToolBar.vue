@@ -8,7 +8,8 @@
           <i class="fas fa-home fa-lg"></i>
           </router-link></li>
 
-          <li class="dropdown"><router-link to="/home">개요</router-link></li>
+          <div class="dropdown">
+          <li><router-link to="/home">개요</router-link></li></div>
 
           <div class="dropdown">
           <li><router-link to="/planet">행성 이야기</router-link></li>
@@ -58,26 +59,27 @@ export default {
 
 <style scoped>
 nav {
-  display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   width: 100%;
-  min-width: 10%;
+  background: rgb(125, 157, 168);
 }
 .mainbar{
-  background: rgb(125, 157, 168);
   display: flex;
   list-style-type: none;
   position: relative;
-  width: 100%;
   margin: 0;
-  flex-direction: row;
+  /* flex-direction: row; */
+}
+div li {
+  font-size: 1.2em;
 }
 a {
-  width: 80px;
+  width: 100px;
+  /* width: 100%; */
   /* margin-left: 20%; */
   /* margin-right: 20%; */
-  /* padding-left: 50%; */
-  /* padding-right: 50%; */
+  /* padding-left: 100%; */
+  /* padding-right: 100%; */
   padding-left: 30px;
   padding-right: 30px;
 
@@ -85,19 +87,20 @@ a {
   color: white;
   text-decoration: none; 
   /* 밑줄제거 */
-  display: block;
+  display: inline-block;
   text-align: center;
-  padding-bottom: 15px;
-  padding-top: 20px; 
+  padding-bottom: 20px;
+  padding-top: 25px; 
   /* router link 태그는 a 태그이다.*/
 }
+
 /* 마우스 호버시 밑줄 그리기 시작*/
 .dropdown:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
   display: block;
-  height: 3px;
+  height: 4px;
   left: 50%;
   position: absolute;
   background: lightgoldenrodyellow;
@@ -109,9 +112,11 @@ a {
   left: 0; 
 }
 /* 마우스 호버시 밑줄 그리기 끝*/
+
 .list-home{
   margin-right: 5%;
-  margin-left: 5%;
+  margin-left: 3%;
+  font-size: 1.2em;
 }
 
 .login-button {
@@ -128,15 +133,14 @@ a {
   text-align: center;
   text-decoration: none;
   display: block;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+  font-size: 1.2em;
 }
 /* 세부 컨텐츠 마우스 올렸을 때 색깔*/
 .dropdown-content a:hover {
-  /* background-color: blueviolet; */
   background-color: lightblue;
   /* background-color: rgb(150, 203, 221); */
-  /* background-color: #f1f1f1; */
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -147,6 +151,6 @@ a {
   position: absolute;
   background-color: rgb(125, 157, 168);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1; /* 제일 맨 위에 위치 */
 }
 </style>

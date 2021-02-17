@@ -1,20 +1,22 @@
 <template>
   <div>
-    <br>
-    <h2>가스형 행성</h2><br>
-    <span class="font2"><font size="3em" color="navy">행성 이야기 > 가스형 행성</font></span><br><br>
-      <hr class="hr1"><br>
+    <br><br>
+    <h1>가스형 행성</h1><br>
+    <span class="font2">행성 이야기 > 가스형 행성</span><br><br>
+    <hr><br>
       
-
     <span class="first">
       <i class="star fas fa-star-and-crescent fa-2x"></i>
-      우리 태양계 행성중 가스형 행성은 [ 목성, 토성, 천왕성, 해왕성 ] 입니다.</span><br><br><br><br>
+        우리 태양계 행성중 가스형 행성은 [ 목성, 토성, 천왕성, 해왕성 ] 입니다.
+    </span><br><br><br><br>
 
     <a class="top" href="#" title="맨 위로"> <i class="fas fa-arrow-up fa-2x"></i><br></a>
 
-    <div class="notice_box"> <i class="fas fa-exclamation-circle fa-2x" style="color: rgb(172, 126, 219)"></i><br><br>
-    아래 버튼 클릭시 본문이 중국어로 번역 됩니다.<br>
-    다시 한국어로 되돌리고 싶으시다면 페이지 새로고침(F5)를 눌러주시길 바랍니다.</div>
+    <div class="notice_box"> 
+      <i class="fas fa-exclamation-circle fa-2x" style="color: rgb(172, 126, 219)"></i><br><br>
+      아래 버튼 클릭시 본문이 중국어로 번역 됩니다.<br>
+      다시 한국어로 되돌리고 싶으시다면 페이지 새로고침(F5)를 눌러주시길 바랍니다.
+    </div>
 
     <div class="btn_div"><button class="btn" v-on:click="changed()"><strong>中文</strong></button></div>
     
@@ -166,30 +168,7 @@ export default {
 </script>
 
 <style scoped>
-  .hr1 {
-   width: 600px;
-   color: lightgray;
-   border: solid 1px;
- }
-  h2 {
-   text-align: center;
- }
- .star {
-   color: blueviolet;
-   padding-right: 15px;
- }
- .first {
-   width:100%;
-   text-align: center;
-   display: inline-block;
-   color: gray;
- }
-  .font2 {
-   width: 100%;
-  display: inline-block;
-  text-align: center;
-}
-/* ---------------------------------------- */
+
 table, td{
    min-width: 80%;
    max-width: 90%;
@@ -209,15 +188,13 @@ table, td{
   object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
 }
 .btn {
-  /* border: 1.5px solid rgb(172, 126, 219); */
   border: none;
-  box-shadow: 2px 2px 2px lightgray;
   color:white;
   background-color: rgb(172, 126, 219);
   background: linear-gradient( to top, rgb(172, 126, 219), rgb(223, 199, 247));
   padding: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   border-radius: 8px;
   outline: 0; /* 클릭시 테두리 삭제 */
   font-size: 20px;
@@ -232,15 +209,13 @@ table, td{
   text-align: center;
 }
 .notice_box {
-  width: 45%;
+  width: 40%;
   padding: 3%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   text-align: center;
   margin-left: auto; margin-right: auto;
-  border: 5px double rgb(223, 199, 247);
-  box-shadow: 5px 5px 5px rgb(231, 219, 243);
-  color: rgb(172, 126, 219);
-  background-color: white;
-  font-size: 15px;
+  border: 5px solid rgb(223, 199, 247);
+  box-shadow: 6px 6px 6px rgb(231, 219, 243);
+  color: gray;
 }
 </style>

@@ -1,16 +1,17 @@
 <template>
   <div>
-    <br>
-    <h2>지구형 행성</h2><br>
-    <span class="font2"><font size="3em" color="navy">행성 이야기 > 지구형 행성</font></span><br><br>
-      <hr class="hr1"><br>
+    <br><br>
+    <h1>지구형 행성</h1><br>
+    <span class="font2">행성 이야기 > 지구형 행성</span><br><br>
+      <hr><br>
       
 
     <span class="first">
         <i class="star fas fa-star-and-crescent fa-2x"></i>
-      우리 태양계 행성중 지구형 행성은 [ 수성, 금성, 지구, 화성 ] 입니다.</span><br><br><br><br>
+          우리 태양계 행성중 지구형 행성은 [ 수성, 금성, 지구, 화성 ] 입니다.
+    </span><br><br><br><br>
 
-      <a class="top" href="#" title="맨 위로"> <i class="fas fa-arrow-up fa-2x"></i><br></a>
+    <a class="top" href="#" title="맨 위로"> <i class="fas fa-arrow-up fa-2x"></i><br></a>
     
 
     <table id="planet_table" title="클릭시 해당 내용으로 넘어갑니다.">
@@ -30,12 +31,11 @@
         v-bind:class="{'white': !clicked3, 'blue': clicked3}" 
         v-on:click="clicked3 = !clicked3">화성</td>
       </tr>
-
     </table>
     <br><br><br><br>
 
-
-
+  
+    <div class="question-line">
     <i class="question fas fa-mercury fa-2x" id='mercury'></i>
      <strong>수성(水星, Mercury)이란?</strong>
      <p class="pic_1">
@@ -44,30 +44,31 @@
       <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3571319&cid=58947&categoryId=58980">
         <img src="https://ncc-phinf.pstatic.net/ncc01/2011/2/16/233/3.jpg?type=w323" alt="사진 없음"></a></p>
-        <br><br><hr class="hr2"><br>
-
+        <br><br>
+        <hr class="hr2"><br>
     
     <i class="answer fas fa-exclamation fa-2x"></i>
-    <strong>태양계에서 가장 빠른 행성</strong><br><br><br>
+    <strong>태양계에서 가장 빠른 행성</strong>
+    </div><br><br><br>
 
-    <span class="answer-box">
-    <table class="answer-table">
-      <tr>
-        <td><h2 style="text-align:left">개요</h2></td>
+    <div class="answer-box">
+      <table class="answer-table">
+        <tr>
+          <td><h2 style="text-align:left">개요</h2></td>
         
-        <td><i class="answer2 fas fa-book"></i><strong>유래</strong></td>
-        <td>전령의 신 헤르메스(로마식 이름 머큐리)에서 유래되었다.<br>
-            수성이 태양과 매우 가까이 있기 때문에 (태양의 중력의 영향으로)<br>
+          <td><i class="answer2 fas fa-book"></i><strong>유래</strong></td>
+          <td>전령의 신 헤르메스(로마식 이름 머큐리)에서 유래되었다.<br>
+            수성이 태양과 매우 가까이 있기 때문에 (태양의 중력의 영향으로)
             매우 빠른 속도로 공전 하고 있다는 것이 그 이유.<br></td>
-      </tr>
-      <tr>
+        </tr>
         
-        <td></td> <td><i class="answer2 fas fa-people-arrows"></i><strong>태양과의 거리</strong></td><td>0.4AU</td>
-      </tr>
-      <tr>
-        
-        <td></td> <td><i class="answer2 fas fa-calendar-alt"></i><strong>공전 주기</strong></td><td>88일(수성에서의 1년은 88일)</td>
-      </tr></table><br>
+        <tr>        
+          <td></td> <td><i class="answer2 fas fa-people-arrows"></i><strong>태양과의 거리</strong></td><td>0.4AU</td>
+        </tr>
+        <tr>
+          <td></td> <td><i class="answer2 fas fa-calendar-alt"></i><strong>공전 주기</strong></td><td>88일(수성에서의 1년은 88일)</td>
+        </tr>
+        </table><br> 
 
       <hr class="hr3">
 
@@ -85,12 +86,13 @@
     긴 밤에는 -185°C까지 내려가지만, 긴 낮에는 470°C까지 올라간다.</td><br>
       </tr>
     </table><br>
-    </span> <br><br><br><br><br>
+    </div> <br><br><br><br><br>
 
+    <!-- --------------------------------------------수성 설명 끝 -->
 
-
-    <i class="question fas fa-venus fa-2x" id='venus'></i>
-     <strong>금성(金星, Venus)이란?</strong>
+    <div class="question-line">
+      <i class="question fas fa-venus fa-2x" id='venus'></i>
+      <strong>금성(金星, Venus)이란?</strong>
 
      <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3571332&cid=58947&categoryId=58980">
@@ -98,14 +100,13 @@
       <p class="pic_1">
         <a href="https://terms.naver.com/entry.nhn?docId=3571332&cid=58947&categoryId=58980">
         <img src="https://ncc-phinf.pstatic.net/ncc02/2011/2/18/221/1-1.jpg?type=w315" alt="사진 없음"></a></p>    
-     <br><br><hr class="hr2">
-
-    <br>
+      <br><br><hr class="hr2"><br>
 
     <i class="answer fas fa-exclamation fa-2x"></i>
     <strong>가장 아름답지만, 지옥과도 같은 행성</strong><br><br><br>
+  </div> 
 
-    <span class="answer-box">
+    <div class="answer-box">
     <table class="answer-table">
       <tr>
         <td><h2 style="text-align:left">개요</h2></td>
@@ -115,22 +116,18 @@
       밝은 노란색에 가까우며, 아주 두터운 대기층이 태양빛을 밝게 반사하기 때문에 매우 밝고 화려하게 보인다. <br>
       따라서 비너스, 루시퍼와 같은 아름다운 신들의 이름을 가지고 있다.</td>
       </tr>
-
       <tr>
         <td></td> <td><i class="answer2 fas fa-people-arrows"></i><strong>태양과의 거리</strong></td><td>0.7AU</td>
       </tr>
-
       <tr>
         <td></td> <td><i class="answer2 fas fa-calendar-alt"></i><strong>공전 / 자전 주기</strong></td>
         <td>224일 / 243일<br>
         특이하게도, 금성은 자전 주기보다 길다. (하루가 1년보다 긴 것)</td>
-      </tr>
-      
+      </tr> 
       <tr>
         <td></td> <td><i class="answer2 fas fa-ruler-combined"></i><strong>자전축</strong></td>
         <td>177.3°</td>
       </tr>
-
       </table><br>
 
       <hr class="hr3">
@@ -160,33 +157,35 @@
       </tr>
 
     </table><br>
-    </span> <br><br><br><br><br> 
+    </div> <br><br><br><br><br> 
 
+    <!-- --------------------------금성 설명 끝 -->
 
+    <div class="question-line">
+      <i class="question fas fa-mars fa-2x" id='mars'></i>
+      <strong>화성(火星, Mars)이란?</strong>
 
-    <i class="question fas fa-mars fa-2x" id='mars'></i>
-     <strong>화성(火星, Mars)이란?</strong>
-
-     <p class="pic_1">
-        <a href="https://terms.naver.com/entry.nhn?docId=3571384&cid=58947&categoryId=58980">
-        <img src="https://ncc-phinf.pstatic.net/20151203_146/1449126306897lrDag_JPEG/00.jpg?type=w646" alt="사진 없음"></a></p>
       <p class="pic_1">
-        <a href="https://terms.naver.com/entry.nhn?docId=3571332&cid=58947&categoryId=58980">
-        <img src="https://ncc-phinf.pstatic.net/ncc02/2011/2/28/186/2.jpg?type=w305" alt="사진 없음"></a></p>
-     <br><br><hr class="hr2"><br>
+          <a href="https://terms.naver.com/entry.nhn?docId=3571384&cid=58947&categoryId=58980">
+          <img src="https://ncc-phinf.pstatic.net/20151203_146/1449126306897lrDag_JPEG/00.jpg?type=w646" alt="사진 없음"></a></p>
+        <p class="pic_1">
+          <a href="https://terms.naver.com/entry.nhn?docId=3571332&cid=58947&categoryId=58980">
+          <img src="https://ncc-phinf.pstatic.net/ncc02/2011/2/28/186/2.jpg?type=w305" alt="사진 없음"></a></p>
+      <br><br><hr class="hr2"><br>
 
-    <i class="answer fas fa-exclamation fa-2x"></i>
-    <strong>붉게 타오르는 것 같은 행성</strong><br><br><br>
+      <i class="answer fas fa-exclamation fa-2x"></i>
+      <strong>붉게 타오르는 것 같은 행성</strong>
+    </div><br><br><br>
 
-    <span class="answer-box">
-    <table class="answer-table">
-      <tr>
-        <td><h2 style="text-align:left">개요</h2></td>
+    <div class="answer-box">
+      <table class="answer-table">
+        <tr>
+          <td><h2 style="text-align:left">개요</h2></td>
 
-        <td><i class="answer2 fas fa-book"></i><strong>유래</strong></td>
-        <td>아주 밝은 것과 더불어, 맨 눈으로도 붉은 색을 관측할 수 있다.<br>
-            활활 타오르는 것 같은 강렬한 색상 때문에 전쟁의 신(mars)의 이름으로 불리게 되었다고 한다.<br></td>
-      </tr>
+          <td><i class="answer2 fas fa-book"></i><strong>유래</strong></td>
+          <td>아주 밝은 것과 더불어, 맨 눈으로도 붉은 색을 관측할 수 있다.<br>
+              활활 타오르는 것 같은 강렬한 색상 때문에 전쟁의 신(mars)의 이름으로 불리게 되었다고 한다.<br></td>
+        </tr>
 
       <tr>
         <td></td> <td><i class="answer2 fas fa-people-arrows"></i><strong>태양과의 거리</strong></td><td>1.5AU</td>
@@ -218,7 +217,7 @@
       실제로 생명체가 발견되지는 않았으나, 물이 존재하기 때문에 생명체가 존재할 가능성이 조금은 남아있다.</td><br>
       </tr>
     </table><br>
-    </span> <br><br><br><br><br>
+    </div> <br><br><br><br><br>
     
   </div>
 </template>
@@ -248,39 +247,17 @@ export default {
   div {
     vertical-align: middle;
   }
-  .hr1 {
-   width: 600px;
-   color: lightgray;
-   border: solid 1px;
- }
   .hr2 {
-   width: 900px;
+   width: 90%;
    color: lightgray;
    border: solid 1px;
+   margin-right:0;
  }
  .hr3 {
    width: 750px;
    color: lightgray;
    border: solid 1px;
  }
-  h2 {
-   text-align: center;
- }
- .star {
-   color: skyblue;
-   padding-right: 15px;
- }
- .first {
-   width:100%;
-   text-align: center;
-   display: inline-block;
-   color: gray;
- }
- .font2 {
-   width: 100%;
-  display: inline-block;
-  text-align: center;
-}
 .question {
    margin-left: 15%;
    padding-right: 15px;
@@ -297,27 +274,31 @@ export default {
    /* color: darkorchid; */
    color: lightblue;
  }/* icon 스타일 2 */
+
  .answer-box {
    display: inline-block;
    border: 3px dashed lightgray;
-   padding: 1% 3%;
+   padding: 3%;
    margin-left: 15%;
-   margin-right: 15%;
+   /* margin-right: 15%; */
+   width: 70%;
  }
  .answer-table td{
-   min-width: 160px;
+   min-width: 170px;
    padding: 1%;
    border-collapse: collapse;
-  font-size: 15px;
+  font-size: 1.1em;
   vertical-align: text-top;
  } /* 대답 table 스타일 */
+
   img, .pic_1 {
   display: inline-block;
   padding-left: 20px;
   width: 200px;
   object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
 }
-/* -----------------------------------table 서식 */
+/* ---------------------여기까지 table 서식 */
+
 #planet_table {
   width: 35%;
   margin-left: auto; margin-right: auto; /* 표 가운데로 */
@@ -325,10 +306,16 @@ export default {
   background-color: white;
   border-collapse: collapse; /*선 없애기*/
   border: 0.5px solid lightgray;
-  /* box-shadow: 2px 2px 2px lightgray;  */
+  box-shadow: 2px 2px 2px lightgray; 
   cursor: pointer;
-}
+} /* 이동 표 */
 td {
   padding: 3%;
+}
+.question-line {
+  width: 60%;
+  vertical-align: middle;
+  margin-left: 20%;
+  font-size: 1.2em;
 }
 </style>

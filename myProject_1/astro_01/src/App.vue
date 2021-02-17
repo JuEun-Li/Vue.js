@@ -36,4 +36,31 @@ export default {
   text-decoration: none;
   opacity:0.7;
 }
+ h1 {
+   text-align: center;
+ }
+ .star {
+   color: skyblue;
+   padding-right: 15px;
+ }
+  .first {
+   display: inline-block;
+   width:100%;
+   text-align: center;
+   color: gray;
+   padding-right: 15px;
+   font-size: 1.2em;
+ } /* 페이지 중앙 설명 문구 */
+ .font2 {
+  display: inline-block;
+  width:100%;
+  text-align: center;
+  color: navy;
+  font-size: 1.1em;
+} /* 현재 위치를 알려주는 문장*/
+ hr {
+   width: 600px;
+   color: lightgray;
+   border: solid 1px;
+ }
 </style>

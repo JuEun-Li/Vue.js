@@ -1,8 +1,8 @@
 <template>
   <div>
-    <br>
-    <h2>개요</h2><br>
-    <span class="font2"><font size="3em" color="navy">home > 개요</font></span><br><br>
+    <br><br>
+    <h1>개요</h1><br>
+    <span class="font2">home > 개요</span><br><br>
       <hr><br>
       
     <div class="first">
@@ -75,68 +75,42 @@ export default {
 .main {
   text-align: center;
 }
-div {
-  vertical-align: middle;
-}
- hr {
-   width: 600px;
-   color: lightgray;
-   border: solid 1px;
- }
- h2 {
-   text-align: center;
- }
- .star {
-   color: skyblue;
-   padding-right: 15px;
- }
- .first {
-   display: inline-block;
-   width:100%;
-   text-align: center;
-   color: gray;
-   padding-right: 15px;
- }
+
 .pic_1 {  
-  width: 400px;
+  width: 500px;
   display: inline-block;
   vertical-align: middle;
 }
 .pic_2 {  
-  width: 400px;
+  width: 500px;
   display: inline-block;
   vertical-align: top;
 }
 img {
-  width: 300px;
+  width: 400px;
   object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
 }
 /* -------------- img 관련 태그들 */
+
 .font1 {
   float: left;
   margin-left: 15%;
 }
-.font2 {
-  display: inline-block;
-  width:100%;
-  text-align: center;
-}
-
 /* 따옴표 아이콘 시작 */
 .icon_left1 {
   float: left;
   color: rgb(253, 223, 236);
-  margin-right: 5%;
+  padding-left: 5%;
 }
 .icon_right1 {
   float: right;
   color: rgb(253, 223, 236);
-  margin-right: 5%;
+  padding-right: 5%;
 }
 .icon_left2 {
   float: left;
   color: rgb(211, 235, 247);
-  margin-right: 5%;
+  padding-left: 5%;
 }
 .icon_right2 {
   float: right;
@@ -146,7 +120,7 @@ img {
 .icon_left3 {
   float: left;
   color: rgb(224, 222, 239);
-  margin-right: 5%;
+  padding-left: 5%;
 }
 .icon_right3 {
   float: right;
@@ -154,14 +128,15 @@ img {
   margin-right: 5%;
 }
 /* 따옴표 아이콘 끝*/
+
 /* 박스 서식 시작 */
 .box_1, .box_2, .box_3 {
   margin-left: 5%;
-  max-width: 100%;
-  min-width: 40%;
+  width: 550px;
   border: 7px solid;
-  font-size: 100%;
-  text-align:center;
+  font-size: 1.2em;
+  text-align: center;
+
 
   border-color: rgb(253, 223, 236);
   box-shadow: 7px 7px 7px rgb(253, 223, 236);
