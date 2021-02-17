@@ -135,7 +135,7 @@ a {
   display: block;
   padding-top: 7.5%;
   padding-bottom: 7.5%;
-  font-size: 1.2em;
+  font-size: 1.2em; 
 }
 /* 세부 컨텐츠 마우스 올렸을 때 색깔*/
 .dropdown-content a:hover {
