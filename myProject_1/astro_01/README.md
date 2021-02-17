@@ -1,12 +1,16 @@
 # astro_01 (Astronomy-Page)
 
-## summary
+## Summary
 ```
 천문학에 대해 이야기하고, 질의응답을 주고받을 수 있는 페이지 입니다.
 ```
-## Project setup
+## Stack
 ```
-npm install
+html
+css
+javascript
+vue.js
++) firebase
 ```
 
 ### Compiles and hot-reloads for development
@@ -18,11 +22,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
