@@ -1,9 +1,9 @@
 <template>
   <div>
-
-    <br>
-    <h2>달</h2><br>
-    <span class="font2"><font size="3em" color="navy">위성 이야기 > 달</font></span><br><br>
+    <br><br>
+    <h1>달</h1>
+    <div class="line"></div>
+    <span class="font2">위성 이야기 > 달</span><br><br>
       <hr class="hr1"><br>
       
 
@@ -80,47 +80,6 @@ export default {
 </script>
 
 <style scoped>
-div {
-    vertical-align: middle;
-  }
-  .hr1 {
-   width: 600px;
-   color: lightgray;
-   border: solid 1px;
- }
- h2 {
-   text-align: center;
- }
- .star {
-   color: aqua;
-   padding-right: 15px;
- }
- .first {
-   width:100%;
-   text-align: center;
-   display: inline-block;
-   color: gray;
- }
- .font2 {
-   width: 100%;
-  display: inline-block;
-  text-align: center;
-}
-.top {
-  width: 4.5%;
-  height: 6.5%;
-  padding-top: 1%;
-  background-color: lightgray;
-  color:gray;
-  box-shadow: 2px 2px 2px lightgray;
-  text-align: center;
-  display: scroll;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  text-decoration: none;
-  opacity:0.7;
-}
 /* ---------------------------------------여기까지 기본 서식 */
   .fade-enter-active,
 .fade-leave-active {

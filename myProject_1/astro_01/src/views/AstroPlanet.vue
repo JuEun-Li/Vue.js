@@ -1,7 +1,8 @@
 <template>
   <div>
     <br><br>
-    <h1>지구형 행성</h1><br>
+    <h1>지구형 행성</h1>
+    <div class="line"></div>
     <span class="font2">행성 이야기 > 지구형 행성</span><br><br>
       <hr><br>
       
@@ -279,9 +280,9 @@ export default {
    display: inline-block;
    border: 3px dashed lightgray;
    padding: 3%;
-   margin-left: 15%;
+   margin-left: 20%;
    /* margin-right: 15%; */
-   width: 70%;
+   width: 60%;
  }
  .answer-table td{
    min-width: 170px;
@@ -313,9 +314,9 @@ td {
   padding: 3%;
 }
 .question-line {
-  width: 60%;
+  width: 70%;
   vertical-align: middle;
-  margin-left: 20%;
+  margin-left: 15%;
   font-size: 1.2em;
-}
+} /* 질문, 대답 아이콘 부분*/
 </style>

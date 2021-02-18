@@ -3,37 +3,31 @@
       <nav>
         <ul class="mainbar">
           
-         <li class="list-home">
-           <router-link to="/home">
-          <i class="fas fa-home fa-lg"></i>
-          </router-link></li>
-
+            <li class="list-home">
+              <router-link to="/home">
+                <i class="fas fa-home fa-lg"></i>
+              </router-link></li>
+          
+          
           <div class="dropdown">
-          <li><router-link to="/home">개요</router-link></li></div>
-
-          <div class="dropdown">
-          <li><router-link to="/planet">행성 이야기</router-link></li>
-            <div class="dropdown-content">
-              <router-link to="/planet">지구형 행성</router-link>
-              <router-link to="/planet2">가스형 행성</router-link>
-            </div>
+            <li><router-link to="/home">개요</router-link></li>
           </div>
 
           <div class="dropdown">
-          <li><router-link to="/satellite2">위성 이야기</router-link></li>
+            <li><router-link to="/planet">행성 이야기</router-link>
+              <div class="dropdown-content">
+                <router-link to="/planet">지구형 행성</router-link>
+                <router-link to="/planet2">가스형 행성</router-link>
+              </div></li>
+          </div>
+
+          <div class="dropdown">
+          <li><router-link to="/satellite2">위성 이야기</router-link>
             <div class="dropdown-content">
               <router-link to="/satellite2">목성의 위성</router-link>
               <router-link to="/satellite">달</router-link>
-            </div>
+            </div></li>
           </div>
-
-          <!-- <div class="dropdown">
-          <li class="dropdown-button3"><router-link to="/quiz">퀴즈</router-link></li>
-          <div class="dropdown-content">
-              <a href="#">참여 방법</a>
-              <a href="#">문제 풀기</a>
-            </div>
-          </div> -->
 
           <div class="dropdown">
           <li><router-link to="/chatting">채팅</router-link></li>
@@ -43,9 +37,11 @@
           <li><router-link to="/list">게시판</router-link></li>
           </div>
 
+      
           <li class="login-button">
           <router-link to="/login">
           <i class="fas fa-sign-in-alt fa-lg"></i> Login </router-link></li>
+        
         </ul>
       </nav>
   </div>
@@ -58,10 +54,17 @@ export default {
 </script>
 
 <style scoped>
+
+div {
+  margin: 0;
+}
 nav {
+  display: inline-block;
   /* justify-content: space-around; */
   width: 100%;
+  /* height: 100%; */
   background: rgb(125, 157, 168);
+  margin-right: 0;
 }
 .mainbar{
   display: flex;
@@ -71,26 +74,31 @@ nav {
   /* flex-direction: row; */
 }
 div li {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  /* margin-left: 5%; */
+  /* width: 100%; */
 }
-a {
-  width: 100px;
+ a {
+  width: 120px;
   /* width: 100%; */
   /* margin-left: 20%; */
   /* margin-right: 20%; */
-  /* padding-left: 100%; */
-  /* padding-right: 100%; */
-  padding-left: 30px;
-  padding-right: 30px;
+  /* padding-left: 50%; */
+  /* padding-right: 50%; */
+  padding-left: 35px;
+  padding-right: 35px;
+  /* padding-bottom: 25px; */
+  /* padding-top: 30px;  */
+  padding-top: 16%;
+  padding-bottom: 14%;
+  text-align: center;
 
   cursor: pointer;
   color: white;
   text-decoration: none; 
   /* 밑줄제거 */
   display: inline-block;
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 25px; 
+    font-size: 1.1em; 
   /* router link 태그는 a 태그이다.*/
 }
 
@@ -114,8 +122,8 @@ a {
 /* 마우스 호버시 밑줄 그리기 끝*/
 
 .list-home{
-  margin-right: 5%;
-  margin-left: 3%;
+  margin-right: 3%;
+  margin-left: 2%;
   font-size: 1.2em;
 }
 
@@ -126,7 +134,6 @@ a {
 /*--------------------------------여기서부터 드랍다운 네비바*/
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 .dropdown-content a {
   color: white;
@@ -135,7 +142,6 @@ a {
   display: block;
   padding-top: 7.5%;
   padding-bottom: 7.5%;
-  font-size: 1.2em; 
 }
 /* 세부 컨텐츠 마우스 올렸을 때 색깔*/
 .dropdown-content a:hover {

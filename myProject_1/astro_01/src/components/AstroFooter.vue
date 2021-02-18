@@ -1,6 +1,8 @@
 <template>
-  <div>
-      <span class="main"><strong>Astronomy-Page</strong></span>
+  <div class="main">
+      <div class="logo">
+          <strong>Astronomy-Page</strong>
+      </div>
           <ul class="box">
             <li>제작자: 이주은</li>
             <li>전화 번호: 010-5157-5004</li>
@@ -17,26 +19,26 @@ export default {
 </script>
 
 <style scoped>
-    div {
+    .main {
         /* background-color: rgb(209, 250, 250); */
+        position: absolute;
         background: rgb(125, 157, 168);
         color: white;
-        margin-top: 7%;
-        margin-bottom: 0;
+        margin: 0;
         width: 100%;
         height: 200px;
     }
-    .main {
+    .logo {
         font-size: 25px;
         display: inline-block;
         margin-left: 5%;
-        margin-top: 5%;
+        margin-top: 3%;
     }
     .box {
         display: inline-block;
         font-size: 0.8em;
         padding-left: 30%;
-        margin-top: 5%;
+        margin-top: 3%;
         vertical-align: top;
         list-style: none;
     }

@@ -1,7 +1,8 @@
 <template>
   <div>
     <br><br>
-    <h1>가스형 행성</h1><br>
+    <h1>가스형 행성</h1>
+    <div class="line"></div>
     <span class="font2">행성 이야기 > 가스형 행성</span><br><br>
     <hr><br>
       

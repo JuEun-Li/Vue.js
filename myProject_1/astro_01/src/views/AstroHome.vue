@@ -1,7 +1,8 @@
 <template>
   <div>
     <br><br>
-    <h1>개요</h1><br>
+    <h1>개요</h1>
+    <div class="line"></div>
     <span class="font2">home > 개요</span><br><br>
       <hr><br>
       
@@ -74,6 +75,7 @@ export default {
 <style scoped>
 .main {
   text-align: center;
+  width: 100%;
 }
 
 .pic_1 {  

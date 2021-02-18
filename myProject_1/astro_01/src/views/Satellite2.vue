@@ -1,7 +1,8 @@
 <template>
   <div>
       <br><br>
-    <h1>목성의 위성</h1><br>
+    <h1>목성의 위성</h1>
+    <div class="line"></div>
     <span class="font2">위성 이야기 > 목성의 위성</span><br><br>
     <hr class="hr1"><br>
 

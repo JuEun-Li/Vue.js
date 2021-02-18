@@ -1,8 +1,9 @@
 <template>
   <div>
-      <br>
-    <h2>chatting</h2><br>
-    <span class="font2"><font size="3em" color="navy">home > chatting</font></span><br><br>
+      <br><br>
+    <h1>채팅</h1>
+    <div class="line"></div>
+    <span class="font2">home > 채팅</span><br><br>
       <hr class="hr1"><br>
 
       <span class="first">
@@ -78,36 +79,6 @@ export default {
 </script>
 
 <style scoped>
-div {
-    vertical-align: middle;
-  }
-  .hr1 {
-   width: 600px;
-   color: lightgray;
-   border: solid 1px;
- }
-  h2 {
-   text-align: center;
- }
-
-.star {
-   color: skyblue;
-   padding-right: 15px;
- }
- .first {
-   width:100%;
-   text-align: center;
-   display: inline-block;
-   color: gray;
- }
- .font2 {
-   width: 100%;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-}
-
-/* -------------------------------------- */
 
 div#input { 
     margin-bottom: 20px; 

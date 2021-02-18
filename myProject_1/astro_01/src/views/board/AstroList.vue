@@ -90,44 +90,50 @@ export default {
 <style scoped>
   /* 버튼 */
 button { 
-  padding: 0.4em 1.5em;
+  padding: 0.6em 2em;
   margin: 0.3em;
   background-color: rgb(106, 154, 193);
   color: white;
   border: 1px solid rgb(106, 154, 193);
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px rgb(106, 154, 193);
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgb(106, 154, 193);
   outline: 0; /* 클릭시 테두리 삭제 */
+  font-size: 1.3em;
 }
 button:hover { cursor: pointer; }
 
 /* 테이블 */
-table { border-collapse: collapse; margin-bottom: 30px; margin-top: 40px; width: 100%; }
+table { border-collapse: collapse; margin-bottom: 30px; margin-top: 7%; width: 100%; }
 tr:nth-child(1) { background-color: rgb(225, 244, 253);}
 tr.clickable:hover { background-color: rgb(171, 223, 249); cursor: pointer; }
-td { padding: 8px;  border: 1px solid rgb(171, 223, 249); font-size: 10pt;}
-td:nth-child(2) { width: 100px; }
+td { padding: 20px;  border: 1px solid rgb(171, 223, 249); font-size: 15pt;}
+td:nth-child(2) { width: 150px; }
 
 /* main */
-div#main { padding: 30px; margin: 50px auto; max-width: 600px;
+div#main { padding: 50px; margin: 70px auto; max-width: 800px; height: 100%;
   border: 3px solid rgb(225, 244, 253); box-shadow: 7px 7px 7px rgb(225, 244, 253);
 }
 div#main h1 { text-align: center; padding-bottom: 6%; 
-  border-bottom: 1px solid rgb(106, 154, 193); color: rgb(106, 154, 193); }
+  border-bottom: 1px solid rgb(106, 154, 193); 
+  color: rgb(106, 154, 193); font-size: 3em;}
 
 /* dialog */
 div#backdrop { 
   position: absolute;
-  left: 0; top: 40%;
+  left: 0; top: 50%;
   width: 100%; height: 100%;
   background-color: #aaa; opacity: 0.5;
 } /*팝업 창 띄워질 때 회색 배경*/
 
-div#dialog { position: absolute; top: 40%; left: 50%;
-  padding: 30px; margin-left: -250px; max-width: 500px;
+div#dialog { position: absolute; top: 55%; left: 50%;
+  padding: 30px; margin-left: -250px; max-width: 600px;
   background-color: white;
   border: 1px solid #ccc; box-shadow: 4px 4px 4px #666;
 } /* 팝업 창 서식*/
+
+div#dialog button {
+  font-size: 0.9em;
+}
 
 div#dialog h1 { text-align: center; padding-bottom: 6%;
   border-bottom: 1px solid rgb(106, 154, 193); color: rgb(106, 154, 193);}
