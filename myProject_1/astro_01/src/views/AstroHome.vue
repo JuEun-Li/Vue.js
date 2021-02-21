@@ -43,7 +43,7 @@
           [ <mark>수성, 금성, 지구, 화성, 목성, 토성, 천왕성, 해왕성</mark> ]<br> 입니다.<br>
           태양과 가장 가까운 수성부터<br>
            가장 멀리 있는 해왕성까지<br>
-          우리 태양계 행성들에 대해 알아봅시다!<br>
+          우리 태양계 행성들에 대해 알아보는 시간을 가져보겠습니다.<br>
           <i class="icon_right2 fas fa-quote-right fa-2x"></i><br>
         </p></div><br><br><br><hr>
         <br><br><br>
@@ -59,7 +59,7 @@
           각 행성의 인력에 의하여 그 둘레를 돌고 있는 천체를 가지고 있습니다. <br>
           바로 <mark>'위성'</mark>입니다.<br>
           지구의 위성은 '달' 하나 뿐입니다.<br>
-          다른 행성들은 어떤 위성을 가지고 있을까요?<br>
+          다른 행성들은 어떤 위성을 가지고 있을지 알아봅시다.<br>
           <i class="icon_right3 fas fa-quote-right fa-2x"></i><br>
         </p></div><br><br>
         <br><br><br>
@@ -69,6 +69,7 @@
 
 <script>
 export default {
+  
 }
 </script>
 

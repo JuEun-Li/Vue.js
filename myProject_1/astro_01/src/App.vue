@@ -62,7 +62,6 @@ export default {
   padding-top: 1%;
 } /* 현재 위치를 알려주는 문장*/
  hr {
-   /* width: 600px; */
    width: 50%;
    color: lightgray;
    border: solid 1px;
