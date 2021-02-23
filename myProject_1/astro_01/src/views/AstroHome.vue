@@ -16,7 +16,7 @@
 
     <div class="main">
     <p class="pic_1">
-        <a href="https://esahubble.org/images/heic0715a/">
+        <a href="https://esahubble.org/images/heic0715a/" title="클릭시 원본 사진 페이지로 넘어갑니다">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0715a.jpg" alt="사진 없음"></a><br>
         <font size="2em" color="gray" class="font1">NASA, ESA and the Hubble Heritage </font>
          <font size="2em" color="gray" class="font1"> (STScI/AURA)-ESA/Hubble Collaboration</font>
@@ -32,7 +32,7 @@
         <br><br><br>
 
       <p class="pic_2">
-        <a href="https://esahubble.org/images/solar_system_b/">
+        <a href="https://esahubble.org/images/solar_system_b/" title="클릭시 원본 사진 페이지로 넘어갑니다">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/solar_system_b.jpg" alt="사진 없음"></a><br>
         <font size="2em" color="gray" class="font1">The International Astronomical  </font><br>
         <font size="2em" color="gray" class="font1">Union/Martin Kornmesser </font>
@@ -49,7 +49,7 @@
         <br><br><br>
 
       <p class="pic_1">
-        <a href="https://esahubble.org/images/heic1904a/">
+        <a href="https://esahubble.org/images/heic1904a/" title="클릭시 원본 사진 페이지로 넘어갑니다">
         <img src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg" alt="사진 없음"></a><br>
         <font size="2em" color="gray" class="font1">ESA/Hubble, NASA, L. Calçada </font>
       </p>
@@ -136,11 +136,9 @@ img {
 .box_1, .box_2, .box_3 {
   margin-left: 5%;
   width: 550px;
-  border: 7px solid;
+  border: 10px solid;
   font-size: 1.2em;
   text-align: center;
-
-
   border-color: rgb(253, 223, 236);
   box-shadow: 7px 7px 7px rgb(253, 223, 236);
   display: inline-block;

@@ -181,6 +181,7 @@ table, td{
    margin-left: auto; margin-right: auto;
    vertical-align: text-top;
     font-family: 'Noto Sans SC', sans-serif;
+    margin-bottom: 10%;
  } /* table 스타일 */
  img, .pic_1 {
   display: inline-block;
