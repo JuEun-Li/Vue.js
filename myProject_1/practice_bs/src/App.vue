@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <Practice></Practice>  
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Practice from './components/Practice.vue';
 
 export default {
-  components: {
-   Practice
-  }
+
 }
 </script>
 
 <style>
-
+  * {
+    padding: 0;
+    margin: 0;
+  }
 </style>
