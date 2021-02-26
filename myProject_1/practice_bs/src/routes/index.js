@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Container from '../views/Container.vue';
 import Practice from '../views/Practice.vue';
+import Offset from '../views/Offset.vue';
 
 Vue.use(VueRouter);
 
@@ -11,7 +12,7 @@ export default new VueRouter({
     routes: [
         {
             path:'/',
-            redirect: '/practice'
+            redirect: '/offset'
         },
         {
             path:'/container',
@@ -20,6 +21,10 @@ export default new VueRouter({
         {
             path:'/practice',
             component: Practice
-        }
+        },
+        {
+            path:'/offset',
+            component: Offset
+        },
     ]
 })
