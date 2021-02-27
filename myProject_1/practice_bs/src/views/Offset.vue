@@ -61,7 +61,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style scope>
 div {
   border: 1px solid gray;
 }

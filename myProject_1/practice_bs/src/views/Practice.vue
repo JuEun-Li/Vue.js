@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scope>
   .wrapper {
       border: 1px solid gray;
       width: 80%;
