@@ -1,5 +1,5 @@
 <template>
-  <div class="top container-fluid bg-success">
+  <div class="bar navbar navbar-default container-fluid">
     <nav>
       <ul>
         <li class="list-home">
@@ -7,10 +7,18 @@
             <i class="fas fa-home fa-lg"></i>
           </router-link>
         </li>
-        <li class="dropdown"><router-link to="/planet">지구형 행성</router-link></li>
-        <li class="dropdown"><router-link to="/planet2">가스형 행성</router-link></li>
-        <li class="dropdown"><router-link to="/satellite">목성의 위성</router-link></li>
-        <li class="dropdown"><router-link to="/list">게시판</router-link></li>
+        <li class="dropdown">
+          <router-link to="/planet">지구형 행성</router-link>
+        </li>
+        <li class="dropdown">
+          <router-link to="/planet2">가스형 행성</router-link>
+        </li>
+        <li class="dropdown">
+          <router-link to="/satellite">목성의 위성</router-link>
+        </li>
+        <li class="dropdown">
+          <router-link to="/list">게시판</router-link>
+        </li>
         <li class="login-button">
           <router-link to="/login">
             <i class="fas fa-sign-in-alt fa-lg"></i> Login
@@ -25,32 +33,37 @@
 export default {};
 </script>
 
-<style scope>
+<style>
 
 nav li {
   list-style: none;
-  float: left; /* 네비바 li 요소 가로 배치 */
+  float: left; 
+  /* 네비바 li 요소 가로 배치 */
   width: 15%;
+  /* height: 100%; */
   box-sizing: border-box;
   /* box 사이즈는 border값 까지만 하겠다.(li속성들이 바깥으로 나가지 않음) */
   text-align: center;
   padding-top: 1%;
   padding-bottom: 1%;
 }
-a {
+a, ul li {
   display: block;
   cursor: pointer;
-  color: white;
+  color: gray;
   text-decoration: none; 
-  width: 15%;
   /* 밑줄제거 */
   /* router link 태그는 a 태그이다.*/
+}
+a:hover {
+  color: gray;
+  text-decoration: none; 
 }
 nav ul {
   overflow: hidden;
 }
-.top {
-  padding: 20px 0 0 0;
+.bar {
+  padding: 20px 0 0 20px;
   font-size: 1.3vw;
   /* 모니터 크기에 따라 글씨 크기 */
 }
@@ -75,7 +88,7 @@ nav ul {
 
 @media (max-width: 767px) {
   /* 스마트폰 사이즈 */
-  .top {
+  .bar {
     font-size: 1.5em;
   }
   nav li {
@@ -84,7 +97,7 @@ nav ul {
   }
 }
 @media (min-width: 768px) {
-  .top {
+  .bar {
     width: 100%;
   }
 }
