@@ -11,7 +11,10 @@ import AstroFooter from '../../astro_01/src/components/AstroFooter.vue'
 import ToolBar from './components/ToolBar.vue'
 
 export default {
-  components: { ToolBar, AstroFooter },
+  components: { 
+    ToolBar,
+    AstroFooter
+  }
 }
 </script>
 
