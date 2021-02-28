@@ -1,7 +1,5 @@
 <template>
-  <div>
-      satellite
-  </div>
+  <div>satellite</div>
 </template>
 
 <script>

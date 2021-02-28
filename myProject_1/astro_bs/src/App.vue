@@ -2,18 +2,18 @@
   <div id="app">
     <tool-bar></tool-bar>
     <router-view></router-view>
-    <astro-footer></astro-footer>
+    <under-bar></under-bar>
   </div>
 </template>
 
 <script>
-import AstroFooter from '../../astro_01/src/components/AstroFooter.vue'
 import ToolBar from './components/ToolBar.vue'
+import UnderBar from './components/UnderBar.vue'
 
 export default {
   components: { 
     ToolBar,
-    AstroFooter
+    UnderBar,
   }
 }
 </script>

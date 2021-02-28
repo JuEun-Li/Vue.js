@@ -35,6 +35,6 @@ export default new VueRouter({
         {
             path:'/list',
             component: List
-        }
+        },
     ]
 })
