@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="bar navbar-default hidden-xs">
+    <nav class="bar">
       <div class="container-fluid">
         <ul>
           <li class="list-home">
@@ -57,13 +57,13 @@ nav li {
 a {
   display: block;
   cursor: pointer;
-  color: gray;
+  color: darkslategray;
   text-decoration: none;
   /* 밑줄제거 */
   /* router link 태그는 a 태그이다.*/
 }
 a:hover {
-  color: gray;
+  color: navy;
   text-decoration: none;
 }
 nav ul {
@@ -83,7 +83,8 @@ nav ul {
   height: 4px;
   left: 50%;
   position: absolute;
-  background: lightgoldenrodyellow;
+  /* background: lightgoldenrodyellow; */
+  background: navy;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
