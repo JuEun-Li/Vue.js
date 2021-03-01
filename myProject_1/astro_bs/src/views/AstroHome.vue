@@ -21,7 +21,7 @@
             <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg">
           </slide>
           <slide>
-            <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic0715a.jpg" alt="사진 없음">
+            <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/opo0842a.jpg" alt="사진 없음">
           </slide>
 
           <hooper-pagination slot="hooper-addons"></hooper-pagination>
@@ -29,8 +29,16 @@
         </hooper>
       </div>
     </div>
+
     <div class="row">
       <div style="height: 50px;">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-offset-3 col-lg-3 col-sm-offset-3 col-sm-3">
+        <h4 style=" font-size: 1.2vw; text-a">이런 내용을 담고 있어요</h4>
+        <div style="width: 100px; height: 5px;background-color: navy"></div><br>
       </div>
     </div>
 
@@ -137,7 +145,7 @@ h3 {
     height: 150px;
   }
    .img-bar {
-    height: 250px;
+    height: 300px;
   }
   .box-in {
     margin-left: 25%;
@@ -156,11 +164,11 @@ h3 {
     height: 200px;
   }
    .img-bar {
-    height: 400px;
+    height: 500px;
   }
   .mid-box {
-    margin-left: 19%;
- /* 2 +  20 * 3 = 62 스마트폰, 태블릿 제외 가운데 정렬*/
+    margin-left: 18.5%;
+ /* 3 +  20 * 3 = 63 스마트폰, 태블릿 제외 가운데 정렬*/
   }
   .box-in {
   margin:0.5%;
@@ -173,6 +181,7 @@ h3 {
     padding-right: 2%;
   }
 }
+
 .hooper-next,
 .hooper-prev {
   /* background-color: transparent; */
@@ -222,9 +231,9 @@ h3 {
   align-items: center;
   position: relative;
   box-sizing: border-box;
-  width: 50%;
+  width: 70%;
   height: 100%;
-   object-fit: contain; 
+   /* object-fit: contain;  */
   /*가로세로 비율을 유지한 채로 사이즈가 조절*/
   /* vertical-align: middle; */
   margin:auto;

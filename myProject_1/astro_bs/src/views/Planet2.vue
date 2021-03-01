@@ -31,7 +31,7 @@ export default {
       slide: [
         { Imgurl: ('https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg')},
        { Imgurl: ('https://ncc-phinf.pstatic.net/ncc01/2011/2/16/233/3.jpg?type=w323')}, 
-      { Imgurl: ('https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg')}
+      { Imgurl: ('https://cdn.spacetelescope.org/archives/images/thumb700x/opo0842a.jpg')}
       ],
       // 타이머
       timer: null,
