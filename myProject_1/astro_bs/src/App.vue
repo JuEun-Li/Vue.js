@@ -23,6 +23,21 @@ export default {
     padding: 0;
     margin: 0;
   }
+  .top {
+  width: 4.5%;
+  height: 6.5%;
+  padding-top: 1%;
+  background-color: lightgray;
+  color:gray;
+  box-shadow: 2px 2px 2px lightgray;
+  text-align: center;
+  display: scroll;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  text-decoration: none;
+  opacity:0.7;
+}
  h1 {
   text-align: center;
   font-size: 2.5em;
