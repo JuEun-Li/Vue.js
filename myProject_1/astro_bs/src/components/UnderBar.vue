@@ -10,7 +10,7 @@
 export default {};
 </script>
 
-<style>
+<style scope>
   @media (max-width: 767px) {
   /* 스마트폰 사이즈 */
     .aaa {

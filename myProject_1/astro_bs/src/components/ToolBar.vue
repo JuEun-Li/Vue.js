@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
 nav li {
   list-style: none;
   float: left;

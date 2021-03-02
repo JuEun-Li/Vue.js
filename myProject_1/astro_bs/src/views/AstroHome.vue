@@ -1,14 +1,5 @@
 <template>
   <div class="container-fluid">
-    <!-- <div class="row back-g bg-info">
-      <div class="title col-lg-offset-2 col-lg-3 col-sm-offset-2 col-sm-4">
-        <span>Astronomy-Page</span>
-      </div>
-    </div> -->
-    <!-- <div class="row">
-      <div style="height: 30px;">
-      </div>
-    </div> -->
     <div class="row">
       <div class="img-bar col-lg-12">
         <hooper>
@@ -103,12 +94,10 @@ export default {
 h3 {
   display: inline-block;
 }
-.back-g {
-  color: white;
-}
+
 .mid-box {
  text-align: center;
- margin-bottom: 5%;
+ margin-bottom: 10%;
 }
 /* 하단 3개 박스 묶음 */
 .box-in {
@@ -119,10 +108,7 @@ h3 {
   background-color: rgb(235, 233, 250);
 }
 /* 하단 3개 박스 서식 */
-.title {
-  padding-top: 1%;
-  font-size: 3vw;
-}
+
 @media (max-width: 767px) {
   /* 스마트폰 사이즈 */
   .back-g {
@@ -132,11 +118,12 @@ h3 {
     height: 250px;
   }
   .box-in {
-    padding-top: 3%;
+    padding-top: 1%;
     height: 100px;
   }
   .box-img {
     width: 10%;
+    vertical-align: middle;
   }
 }
 @media (min-width: 768px) {
