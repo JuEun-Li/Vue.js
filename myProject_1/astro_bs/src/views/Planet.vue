@@ -354,16 +354,17 @@ td {
     margin: 5%;
     vertical-align: middle;
   }
-  h1 {
-    font-size: 1.2em;
-  }
-  .pic_1 {
-    margin-top: 5%;
+  .first {
+    font-size: 1.1em;
   }
   .pic_1 img {
+    margin-top: 5%;
     width: 150px;
     padding: 0;
-    margin-left: 30%;
+    /* margin-left: 30%; */
+  }
+  #planet_table {
+    width: 50%;
   }
   .answer-box {
     width: 90%;
@@ -373,6 +374,9 @@ td {
   .answer-table td {
    display: block;
    padding: 3% 0 3% 3%;
+  }
+  .answer {
+    margin-top: 5%;
   }
 }
 @media (min-width: 768px) {
@@ -387,11 +391,10 @@ td {
 }
 @media (max-width: 991px) {
   /* 딱 태블릿 크기 마지노선 */
+
   .answer-box{
     width: 90%;
     margin-left: 5%;
-    /* text-align: center; */
-    font-size: 0.9em;
   }
   .answer-table td {
    display: block;

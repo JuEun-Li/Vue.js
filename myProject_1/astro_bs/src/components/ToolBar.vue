@@ -2,30 +2,40 @@
   <div>
     <nav class="bar">
       <div class="container-fluid">
-        <ul>
-          <li class="list-home">
-            <router-link to="/home">
-              <i class="fas fa-home fa-lg"></i>
-            </router-link>
-          </li>
-          <li class="dropdown">
-            <router-link to="/planet">지구형 행성</router-link>
-          </li>
-          <li class="dropdown">
-            <router-link to="/planet2">가스형 행성</router-link>
-          </li>
-          <li class="dropdown">
-            <router-link to="/satellite">목성의 위성</router-link>
-          </li>
-          <li class="dropdown">
-            <router-link to="/list">게시판</router-link>
-          </li>
-          <li class="login-button">
-            <router-link to="/login">
-              <i class="fas fa-sign-in-alt fa-lg"></i> Login
-            </router-link>
-          </li>
-        </ul>
+        <div class="row">
+          <button type="button" class="navbar-toggle" data-toggle="navbar-collapse" data-target="#demo">
+            <span class="icon-bar" style="background-color:black"></span>
+            <span class="icon-bar" style="background-color:black"></span>
+            <span class="icon-bar" style="background-color:black"></span>
+          </button>
+          
+          <div id="demo" class="collapse navbar-collapse">
+            <ul>
+              <li class="list-home">
+                <router-link to="/home">
+                  <i class="fas fa-home fa-lg"></i>
+                </router-link>
+              </li>
+              <li class="active dropdown">
+                <router-link to="/planet">지구형 행성</router-link>
+              </li>
+              <li class="dropdown">
+                <router-link to="/planet2">가스형 행성</router-link>
+              </li>
+              <li class="dropdown">
+                <router-link to="/satellite">목성의 위성</router-link>
+              </li>
+              <li class="dropdown">
+                <router-link to="/list">게시판</router-link>
+              </li>
+              <li class="login-button">
+                <router-link to="/login">
+                  <i class="fas fa-sign-in-alt fa-lg"></i> Login
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   </div>
