@@ -9,7 +9,7 @@
             <span class="icon-bar" style="background-color:black"></span>
           </button>
           
-          <div id="demo" class="collapse navbar-collapse">
+          <div id="demo" class="in collapse navbar-collapse">
             <ul>
               <li class="list-home">
                 <router-link to="/home">
