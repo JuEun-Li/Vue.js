@@ -38,7 +38,7 @@
     
     <table class="planet2_table">
       <tr>
-        <td><h3>목성</h3>
+        <td><h3 class="p2_h3">목성</h3>
          <span class="img_wid">
           <p class="pic_2">
             <a href="https://esahubble.org/images/heic2017a/">
@@ -58,7 +58,7 @@
           </ol>
         </td>
 
-        <td><h3>토성</h3>
+        <td><h3 class="p2_h3">토성</h3>
          <span class="img_wid">
           <p class="pic_2">
             <a href="https://esahubble.org/images/heic1917a/">
@@ -79,7 +79,7 @@
       </tr>
 
       <tr>
-        <td><h3>천왕성</h3>
+        <td><h3 class="p2_h3">천왕성</h3>
           <span class="img_wid">
           <p class="pic_2">
             <a href="https://esahubble.org/images/opo0732a/">
@@ -98,7 +98,7 @@
           </ol>
         </td>
 
-        <td><h3>해왕성</h3>
+        <td><h3 class="p2_h3">해왕성</h3>
          <span class="img_wid">
           <p class="pic_2">
             <a href="https://esahubble.org/images/opo1622b/">
@@ -183,8 +183,11 @@ data() {
 </script>
 
 <style scope>
-h3 {
+.p2_h3 {
   display: block;
+}
+.planet2_table {
+  margin-bottom: 10%;
 }
 .planet2_table, .planet2_table td{
    min-width: 80%;
@@ -241,7 +244,6 @@ h3 {
 .planet2_table td {
   display: block;
   border: none;
-  
 }
  .planet2_table li {
    list-style: none;

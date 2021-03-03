@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="backdrop"></div>
-    <div id="dialog" ref="dialog">
+    <div id="dialog" ref="dialog" class="col-xs-12">
       <slot></slot>
     </div>    
   </div>    
@@ -28,10 +28,15 @@ export default {
     background-color: #aaa; opacity: 0.5; margin-top: 40%;
   }
   div#dialog { position: absolute; 
-    top: 100px; 
+    top: 20%;
     left: 50%;
     padding: 30px; background-color: white;
     border: 1px solid #ccc; box-shadow: 4px 4px 4px #666; margin-top: 40%;
       max-width: 500px;
+  }
+  @media (max-width: 767px) {
+    div#dialog {
+        left: 50%;
+    }
   }
 </style>
