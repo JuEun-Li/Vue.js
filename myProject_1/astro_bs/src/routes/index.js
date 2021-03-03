@@ -6,6 +6,7 @@ import List from '../views/List.vue';
 import Planet from '../views/Planet.vue';
 import Planet2 from '../views/Planet2.vue';
 import Satellite from '../views/Satellite.vue';
+import Login from '../views/Login.vue';
 
 Vue.use(VueRouter);
 
@@ -35,6 +36,10 @@ export default new VueRouter({
         {
             path:'/list',
             component: List
+        },
+        {
+            path:'/login',
+            component: Login
         },
     ]
 })

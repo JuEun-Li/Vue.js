@@ -107,7 +107,7 @@ button {
 }
 button:hover { cursor: pointer; }
 /* 테이블 */
-table { border-collapse: collapse; margin-bottom: 30px; margin-top: 7%; width: 100%; }
+table { border-collapse: collapse; margin-bottom: 30px; width: 100%; }
 tr:nth-child(1) { background-color: rgb(225, 244, 253);}
 tr.clickable:hover { background-color: rgb(171, 223, 249); cursor: pointer; }
 td { padding: 20px;  border: 1px solid rgb(171, 223, 249); font-size: 15pt;}
@@ -122,11 +122,11 @@ div#main h1 { text-align: center; padding-bottom: 6%;
 /* dialog */
 div#backdrop { 
   position: absolute;
-  left: 0; top: 50%;
+  left: 0; top: 15%;
   width: 100%; height: 100%;
   background-color: #aaa; opacity: 0.5;
 } /*팝업 창 띄워질 때 회색 배경*/
-div#dialog { position: absolute; top: 55%; left: 50%;
+div#dialog { position: absolute; top: 25%; left: 50%;
   padding: 30px; margin-left: -250px; max-width: 600px;
   background-color: white;
   border: 1px solid #ccc; box-shadow: 4px 4px 4px #666;
