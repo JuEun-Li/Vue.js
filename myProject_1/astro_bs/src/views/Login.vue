@@ -111,7 +111,7 @@ img { width: 100px; height: 100px; display: block; margin: 20px auto; }
 @media (max-width: 767px) {
   /* 스마트폰 사이즈 */
   .notice-box {
-    width: 80%;
+    width: 90%;
   }
   button {
     width: 60%;
@@ -120,10 +120,10 @@ img { width: 100px; height: 100px; display: block; margin: 20px auto; }
 @media (max-width: 991px) {
   /* 딱 태블릿 크기 마지노선 */
   .notice-box {
-    width: 70%;
+    width: 90%;
   }
   button {
-    width: 40%;
+    width: 60%;
   }
 }
 </style>

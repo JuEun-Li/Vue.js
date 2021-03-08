@@ -4,15 +4,21 @@
       <div class="img-bar col-lg-12">
         <hooper>
           <slide>
-            <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/solar_system_b.jpg">
+            <router-link to="/planet">
+              <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/solar_system_b.jpg">
+            </router-link>
             <!-- <font size="2em" color="gray" class="font1">NASA, ESA and the Hubble Heritage </font> -->
             <!-- <font size="2em" color="gray" class="font1"> (STScI/AURA)-ESA/Hubble Collaboration</font> -->
             </slide>  
           <slide>
-            <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg">
+            <router-link to="/planet2">
+              <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/heic1904a.jpg">
+            </router-link>  
           </slide>
           <slide>
-            <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/opo0842a.jpg" alt="사진 없음">
+             <router-link to="/satellite">
+              <img class="main-img" src="https://cdn.spacetelescope.org/archives/images/thumb700x/opo0842a.jpg" alt="사진 없음">
+             </router-link>  
           </slide>
 
           <hooper-pagination slot="hooper-addons"></hooper-pagination>
@@ -34,24 +40,32 @@
     </div>
 
     <div class="mid-box row">
-      <div class="box-in col-sm-6 col-md-3 col-lg-3">
-        <img class="box-img" src="https://www.flaticon.com/svg/vstatic/svg/788/788214.svg?token=exp=1614532792~hmac=d7cf7238a7b9a014111f0468d675cc46">
-        <h3> 지구형 행성</h3>
-        <!-- <span>우리 태양계 행성중 지구형 행성은<br>
-        [ 수성, 금성, 지구, 화성 ] 입니다.</span> -->
-      </div>
-      <div class="box-in col-sm-6 col-md-3 col-lg-3">
-        <img class="box-img" src="https://www.flaticon.com/svg/vstatic/svg/731/731202.svg?token=exp=1614532912~hmac=26b55c371cea895d622093b7a304e012">
-        <h3> 가스형 행성</h3>
-        <!-- <span>우리 태양계 행성중 가스형 행성은<br>
-        [ 목성, 토성, 천왕성, 해왕성 ] 입니다.</span> -->
-      </div>
-      <div class="box-in col-sm-6 col-md-3 col-lg-3">
-        <img class="box-img" src="https://www.flaticon.com/svg/vstatic/svg/944/944318.svg?token=exp=1614533107~hmac=5f87375ed8df2de751bc5015666f2581">
-        <h3> 목성의 위성</h3>
-        <!-- <span>목성의 위성은 70개가 넘습니다.<br>
-        그 중 [ 이오, 유로파, 가니메데, 칼리스토 ]는 갈릴레이 4대 위성 입니다.</span> -->
-      </div>
+      <router-link to="/planet">
+        <div class="box-in col-sm-6 col-md-3 col-lg-3">
+          <img class="box-img" src="https://www.flaticon.com/svg/vstatic/svg/788/788214.svg?token=exp=1614532792~hmac=d7cf7238a7b9a014111f0468d675cc46">
+          <h3> 지구형 행성</h3>
+          <!-- <span>우리 태양계 행성중 지구형 행성은<br>
+          [ 수성, 금성, 지구, 화성 ] 입니다.</span> -->
+        </div>
+      </router-link>
+
+      <router-link to="/planet2">
+        <div class="box-in col-sm-6 col-md-3 col-lg-3">
+          <img class="box-img" src="https://www.flaticon.com/svg/vstatic/svg/731/731202.svg?token=exp=1614532912~hmac=26b55c371cea895d622093b7a304e012">
+          <h3> 가스형 행성</h3>
+          <!-- <span>우리 태양계 행성중 가스형 행성은<br>
+          [ 목성, 토성, 천왕성, 해왕성 ] 입니다.</span> -->
+        </div>
+      </router-link>
+
+      <router-link to="/satellite">
+        <div class="box-in col-sm-6 col-md-3 col-lg-3">
+          <img class="box-img" src="https://www.flaticon.com/svg/vstatic/svg/944/944318.svg?token=exp=1614533107~hmac=5f87375ed8df2de751bc5015666f2581">
+          <h3> 목성의 위성</h3>
+          <!-- <span>목성의 위성은 70개가 넘습니다.<br>
+          그 중 [ 이오, 유로파, 가니메데, 칼리스토 ]는 갈릴레이 4대 위성 입니다.</span> -->
+        </div>
+      </router-link>
     </div>
   </div>
 </template>

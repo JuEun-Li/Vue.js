@@ -4,7 +4,9 @@
     <div class="row back-g bg-info">
       <!-- back-g 너비 관련 서식은 home에 있음 -->
       <div class="title col-lg-4 col-sm-offset-2 col-sm-4">
-        <img class="box-img2" src="https://www.flaticon.com/svg/vstatic/svg/788/788214.svg?token=exp=1614532792~hmac=d7cf7238a7b9a014111f0468d675cc46">
+        <!-- <img class="box-img2" src="https://www.flaticon.com/svg/vstatic/svg/788/788214.svg?token=exp=1614532792~hmac=d7cf7238a7b9a014111f0468d675cc46"> -->
+         <!-- <img class="box-img2" src="C:\Users\이주은\Desktop\illustrator\saturn.png"> -->
+         <img class="box-img2" src="images/saturn.png">
         <span>지구형 행성</span>
       </div>
     </div>
@@ -67,7 +69,7 @@
 
         <i class="answer fas fa-exclamation fa-2x"></i>
         <strong>태양계에서 가장 빠른 행성</strong>
-      </div><br><br><br>
+      </div><br><br>
 
         <div class="answer-box">
           <table class="answer-table">
@@ -126,7 +128,7 @@
         <br><br><hr class="hr2">
 
         <i class="answer fas fa-exclamation fa-2x"></i>
-        <strong>가장 아름답지만, 지옥과도 같은 행성</strong><br><br><br>
+        <strong>가장 아름답지만, 지옥과도 같은 행성</strong><br><br>
       </div> 
 
       <div class="answer-box">
@@ -268,6 +270,10 @@ export default {
   display: inline-block;
   padding-top: 1%;
 }
+/* .box-img2 {
+ width: 100px;
+ height: 100px;
+} */
 .white {
   background-color: white;
 }
@@ -336,7 +342,7 @@ td {
 
  .pic_1, .pic_1 img {
   display: inline-block;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   width: 200px;
   vertical-align: bottom;
   object-fit: contain; /*가로세로 비율을 유지한 채로 사이즈가 조절*/
@@ -358,13 +364,16 @@ td {
     font-size: 1.1em;
   }
   .pic_1 img {
-    margin-top: 5%;
-    width: 150px;
+    width: 95%;
     padding: 0;
     /* margin-left: 30%; */
   }
+  .pic_1_grid {
+    margin: 7% 0 0 1%;
+  }
   #planet_table {
-    width: 50%;
+    width: 80%;
+    font-size: 1.2em;
   }
   .answer-box {
     width: 90%;
@@ -388,6 +397,13 @@ td {
     width: 25%;
     margin: 10%;
   }
+   .pic_1_grid {
+    margin: 7% 0 0 5%;
+   
+  }
+  .pic_1 img{
+    padding-left: 20px;
+  }
 }
 @media (max-width: 991px) {
   /* 딱 태블릿 크기 마지노선 */
@@ -410,6 +426,10 @@ td {
   .box-img2 {
     width: 25%;
     margin: 5%;
+  }
+  
+  .pic_1 img{
+    padding-left: 20px;
   }
 }
 </style>
