@@ -76,9 +76,6 @@ a:hover {
   color: navy;
   text-decoration: none;
 }
-nav ul {
-  /* overflow: hidden; */
-}
 .bar {
   padding: 20px 0 0 20px;
   font-size: 1.3vw;

@@ -5,8 +5,7 @@
       <div class="row back-g bg-info">
         <!-- back-g 너비 관련 서식은 home에 있음 -->
         <div class="title col-lg-4 col-sm-offset-2 col-sm-4">
-          <img class="box-img2" src="https://www.flaticon.com/svg/vstatic/svg/788/788214.svg?token=exp=1614532792~hmac=d7cf7238a7b9a014111f0468d675cc46">
-          <span>목성의 위성</span>
+          <img class="box-img2" src="../views/images/jupiter.png"><span>목성의 위성</span>
         </div>
       </div>
       <br>

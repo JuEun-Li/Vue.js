@@ -1,12 +1,11 @@
 <template>
   <div class="container-fluid">
     <a class="top" href="#" title="맨 위로"> <i class="fas fa-arrow-up fa-2x"></i><br></a>
-    <div class="row back-g bg-info">
+    <div class="row back-g">
       <!-- back-g 너비 관련 서식은 home에 있음 -->
-      <div class="title col-lg-4 col-sm-offset-2 col-sm-4">
+      <div class="title col-lg-4 col-sm-offset-2 col-sm-5">
         <!-- <img class="box-img2" src="https://www.flaticon.com/svg/vstatic/svg/788/788214.svg?token=exp=1614532792~hmac=d7cf7238a7b9a014111f0468d675cc46"> -->
-         <!-- <img class="box-img2" src="C:\Users\이주은\Desktop\illustrator\saturn.png"> -->
-         <img class="box-img2" src="images/saturn.png">
+         <img class="box-img2" src="../views/images/earth.png">
         <span>지구형 행성</span>
       </div>
     </div>
@@ -265,6 +264,7 @@ export default {
 <style scope>
 .back-g {
   color: gray;
+  background-color: rgb(235, 233, 250);
 }
 .title {
   display: inline-block;
@@ -356,7 +356,7 @@ td {
     font-size: 5vw;
   }
   .box-img2 {
-    width: 15%;
+    width: 25%;
     margin: 5%;
     vertical-align: middle;
   }
@@ -395,7 +395,7 @@ td {
   }
   .box-img2 {
     width: 25%;
-    margin: 10%;
+    margin: 5%;
   }
    .pic_1_grid {
     margin: 7% 0 0 5%;
