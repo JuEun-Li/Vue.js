@@ -6,7 +6,7 @@
       <div class="title col-lg-4 col-sm-offset-2 col-sm-5">
         <!-- <img class="box-img2" src="https://www.flaticon.com/svg/vstatic/svg/788/788214.svg?token=exp=1614532792~hmac=d7cf7238a7b9a014111f0468d675cc46"> -->
          <img class="box-img2" src="../views/images/earth.png">
-        <span>지구형 행성</span>
+        <span><strong>지구형 행성</strong></span>
       </div>
     </div>
     <br>

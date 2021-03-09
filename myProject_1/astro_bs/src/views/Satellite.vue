@@ -5,7 +5,8 @@
       <div class="row back-g bg-info">
         <!-- back-g 너비 관련 서식은 home에 있음 -->
         <div class="title col-lg-4 col-sm-offset-2 col-sm-4">
-          <img class="box-img2" src="../views/images/jupiter.png"><span>목성의 위성</span>
+          <img class="box-img2" src="../views/images/jupiter.png">
+          <span><strong>목성의 위성</strong></span>
         </div>
       </div>
       <br>
@@ -138,5 +139,12 @@ export default {
   background: lightblue;
   margin-left: 35%;
   margin-top: 5%;
+}
+@media (max-width: 767px) {
+  .round_table {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 </style>
